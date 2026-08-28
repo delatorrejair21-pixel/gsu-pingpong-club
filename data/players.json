@@ -22,7 +22,7 @@
   {
     "id": "jair-de-la-torre",
     "name": "Jair De La Torre",
-    "photo": "/players/jair-de-la-torre.jpg",
+    "photo": "/players/jair-de-la-torre.png",
     "rating": 1000,
     "wins": 0,
     "losses": 0,
@@ -58,7 +58,7 @@
   {
     "id": "nicholas",
     "name": "Nicholas",
-    "photo": "/players/nicholas.jpg",
+    "photo": "/players/nicholas.png",
     "rating": 1000,
     "wins": 0,
     "losses": 0,
