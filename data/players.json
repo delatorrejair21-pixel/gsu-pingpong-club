@@ -1,0 +1,57 @@
+[
+  {
+    "id": "clarke-ellis",
+    "name": "Clarke Ellis",
+    "photo": "/players/clarke-ellis.png",
+    "avatarPosition": "center 15%",
+    "rating": 1000,
+    "wins": 0,
+    "losses": 0,
+    "year": "Senior"
+  },
+  {
+    "id": "edward",
+    "name": "Edward",
+    "photo": "/players/edward.jpg",
+    "rating": 1000,
+    "wins": 0,
+    "losses": 0,
+    "year": "Freshman"
+  },
+  {
+    "id": "jair-de-la-torre",
+    "name": "Jair De La Torre",
+    "photo": "/players/jair-de-la-torre.jpg",
+    "rating": 1000,
+    "wins": 0,
+    "losses": 0,
+    "year": "Freshman"
+  },
+  {
+    "id": "sidh-jain",
+    "name": "Sidh Jain",
+    "photo": "/players/sidh-jain.jpg",
+    "rating": 1000,
+    "wins": 0,
+    "losses": 0,
+    "year": "Freshman"
+  },
+  {
+    "id": "johnathan",
+    "name": "Johnathan",
+    "photo": "/players/johnathan.jpg",
+    "rating": 1000,
+    "wins": 0,
+    "losses": 0,
+    "year": "Freshman"
+  },
+  {
+    "id": "naffi-tadesse",
+    "name": "Naffi Tadesse",
+    "photo": "/players/naffi-tadesse.jpg",
+    "rating": 1000,
+    "wins": 0,
+    "losses": 0,
+    "year": "Freshman"
+  }
+]

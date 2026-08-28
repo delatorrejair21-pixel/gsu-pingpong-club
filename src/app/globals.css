@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  background-color: #07090d;
+}
+
+::selection {
+  background-color: #2f6fed;
+  color: white;
+}
