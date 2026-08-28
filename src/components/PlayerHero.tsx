@@ -1,5 +1,6 @@
 import { PlayerPhoto } from "./PlayerPhoto";
 import { RankBadge } from "./RankBadge";
+import { getFlagEmoji } from "@/lib/data";
 import type { RankedPlayer } from "@/lib/types";
 
 interface PlayerHeroProps {
@@ -17,7 +18,12 @@ export function PlayerHero({ player }: PlayerHeroProps) {
           </span>
           <RankBadge rank={player.rank} />
         </div>
-        <h1 className="mt-1 font-heading text-3xl font-bold uppercase leading-tight text-white sm:text-4xl">
+        <h1 className="mt-1 flex items-center justify-center gap-2.5 font-heading text-3xl font-bold uppercase leading-tight text-white sm:text-4xl">
+          {player.country && (
+            <span className="text-2xl sm:text-3xl" aria-hidden>
+              {getFlagEmoji(player.country)}
+            </span>
+          )}
           {player.name}
         </h1>
         <div className="mt-2 flex flex-wrap justify-center gap-x-4 gap-y-1 text-sm text-white/60">

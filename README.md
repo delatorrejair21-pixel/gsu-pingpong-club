@@ -71,6 +71,10 @@ Field notes:
   circle — set this to a CSS `object-position` value to nudge the crop, like
   `"center 15%"` to shift the visible window up toward the top of the photo
   (biggest effect is on tall/portrait photos; square ones rarely need this).
+- **`country`** — optional. A two-letter country code (e.g. `"US"`, `"CA"`,
+  `"IN"`, `"NG"`, `"VN"`) shown as a flag next to the player's name on both
+  the leaderboard and their profile. Omit it and no flag shows. It's rendered
+  as an emoji from the code, so there's no image file to upload for this one.
 
 ## Recording a match
 

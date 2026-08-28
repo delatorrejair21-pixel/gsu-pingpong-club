@@ -75,3 +75,11 @@ export function getInitials(name: string): string {
   const last = parts.length > 1 ? parts[parts.length - 1]?.[0] ?? "" : "";
   return (first + last).toUpperCase();
 }
+
+/** Converts an ISO 3166-1 alpha-2 country code (e.g. "US") into its flag emoji. */
+export function getFlagEmoji(countryCode?: string): string {
+  if (!countryCode || countryCode.length !== 2) return "";
+  return countryCode
+    .toUpperCase()
+    .replace(/./g, (char) => String.fromCodePoint(127397 + char.charCodeAt(0)));
+}

@@ -17,6 +17,7 @@ export interface Player {
   gripStyle?: "Shakehand" | "Penhold";
   note?: string;
   avatarPosition?: string;
+  country?: string;
 }
 
 export interface GameScore {

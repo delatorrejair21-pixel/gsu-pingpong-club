@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
 import { PlayerAvatar } from "./PlayerAvatar";
 import { RankBadge } from "./RankBadge";
+import { getFlagEmoji } from "@/lib/data";
 import type { RankedPlayer } from "@/lib/types";
 
 interface LeaderboardClientProps {
@@ -85,7 +86,10 @@ export function LeaderboardClient({ players }: LeaderboardClientProps) {
                       position={player.avatarPosition}
                     />
                     <div>
-                      <div className="font-medium leading-tight text-white">
+                      <div className="flex items-center gap-1.5 font-medium leading-tight text-white">
+                        {player.country && (
+                          <span aria-hidden>{getFlagEmoji(player.country)}</span>
+                        )}
                         {player.name}
                       </div>
                       <div className="text-xs text-white/40 sm:hidden">
