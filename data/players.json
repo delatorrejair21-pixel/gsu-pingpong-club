@@ -12,7 +12,8 @@
   {
     "id": "edward",
     "name": "Edward",
-    "photo": "/players/edward.jpg",
+    "photo": "/players/edward.png",
+    "avatarPosition": "center 10%",
     "rating": 1000,
     "wins": 0,
     "losses": 0,
@@ -66,7 +67,7 @@
   {
     "id": "ethan-nguyen",
     "name": "Ethan Nguyen",
-    "photo": "/players/ethan-nguyen.jpg",
+    "photo": "/players/ethan-nguyen.png",
     "rating": 1000,
     "wins": 0,
     "losses": 0,
