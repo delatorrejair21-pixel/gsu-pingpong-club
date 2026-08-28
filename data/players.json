@@ -16,7 +16,7 @@
     "rating": 1000,
     "wins": 0,
     "losses": 0,
-    "year": "Freshman"
+    "year": "Junior"
   },
   {
     "id": "jair-de-la-torre",
@@ -25,7 +25,7 @@
     "rating": 1000,
     "wins": 0,
     "losses": 0,
-    "year": "Freshman"
+    "year": "Junior"
   },
   {
     "id": "sidh-jain",
@@ -34,7 +34,7 @@
     "rating": 1000,
     "wins": 0,
     "losses": 0,
-    "year": "Freshman"
+    "year": "Sophomore"
   },
   {
     "id": "johnathan",
@@ -43,7 +43,7 @@
     "rating": 1000,
     "wins": 0,
     "losses": 0,
-    "year": "Freshman"
+    "year": "Junior"
   },
   {
     "id": "naffi-tadesse",
@@ -52,6 +52,6 @@
     "rating": 1000,
     "wins": 0,
     "losses": 0,
-    "year": "Freshman"
+    "year": "Sophomore"
   }
 ]
