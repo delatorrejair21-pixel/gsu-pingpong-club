@@ -53,5 +53,23 @@
     "wins": 0,
     "losses": 0,
     "year": "Sophomore"
+  },
+  {
+    "id": "nicholas",
+    "name": "Nicholas",
+    "photo": "/players/nicholas.jpg",
+    "rating": 1000,
+    "wins": 0,
+    "losses": 0,
+    "year": "Freshman"
+  },
+  {
+    "id": "ethan-nguyen",
+    "name": "Ethan Nguyen",
+    "photo": "/players/ethan-nguyen.jpg",
+    "rating": 1000,
+    "wins": 0,
+    "losses": 0,
+    "year": "Freshman"
   }
 ]
