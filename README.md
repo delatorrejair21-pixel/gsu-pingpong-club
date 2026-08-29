@@ -82,7 +82,7 @@ Open [`data/matches.json`](data/matches.json) and add an object to the array:
 
 ```json
 {
-  "id": "m002",
+  "id": "m001",
   "date": "2026-09-02",
   "playerAId": "clarke-ellis",
   "playerBId": "sidh-jain",

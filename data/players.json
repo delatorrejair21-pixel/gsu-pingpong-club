@@ -6,7 +6,7 @@
     "avatarPosition": "center 15%",
     "rating": 1000,
     "wins": 0,
-    "losses": 1,
+    "losses": 0,
     "year": "Senior"
   },
   {
@@ -24,7 +24,7 @@
     "name": "Jair De La Torre",
     "photo": "/players/jair-de-la-torre.png",
     "rating": 1000,
-    "wins": 1,
+    "wins": 0,
     "losses": 0,
     "year": "Junior"
   },
