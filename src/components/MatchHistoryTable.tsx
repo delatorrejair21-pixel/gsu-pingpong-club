@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { PlayerAvatar } from "./PlayerAvatar";
 import {
+  formatMatchDate,
   getGameScoreStrings,
   getMatchOutcome,
   getOpponentId,
@@ -11,17 +12,6 @@ interface MatchHistoryTableProps {
   playerId: string;
   matches: Match[];
   playersById: Map<string, Player>;
-}
-
-function formatDate(iso: string): string {
-  const [year, month, day] = iso.split("-").map(Number);
-  const date = new Date(Date.UTC(year ?? 0, (month ?? 1) - 1, day ?? 1));
-  return date.toLocaleDateString("en-US", {
-    month: "short",
-    day: "numeric",
-    year: "numeric",
-    timeZone: "UTC",
-  });
 }
 
 export function MatchHistoryTable({
@@ -62,7 +52,7 @@ export function MatchHistoryTable({
                 className="border-b border-ink-800 bg-ink-850 last:border-b-0"
               >
                 <td className="whitespace-nowrap py-3 pl-4 text-sm text-white/60">
-                  {formatDate(match.date)}
+                  {formatMatchDate(match.date)}
                 </td>
                 <td className="py-3">
                   {opponent ? (
@@ -82,7 +72,12 @@ export function MatchHistoryTable({
                   )}
                 </td>
                 <td className="py-3 text-sm tabular-nums text-white/70">
-                  {gameScores.join(", ")}
+                  <Link
+                    href={`/matches/${match.id}`}
+                    className="hover:text-accent-bright hover:underline"
+                  >
+                    {gameScores.join(", ")}
+                  </Link>
                 </td>
                 <td className="py-3 text-center">
                   <span

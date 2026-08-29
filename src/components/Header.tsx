@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { getCurrentWeek } from "@/lib/data";
+import { NavTabs } from "./NavTabs";
 
 export function Header() {
   const currentWeek = getCurrentWeek();
@@ -32,6 +33,7 @@ export function Header() {
           {currentWeek}
         </div>
       </div>
+      <NavTabs />
     </header>
   );
 }

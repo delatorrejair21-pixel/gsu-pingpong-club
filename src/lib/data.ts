@@ -36,6 +36,26 @@ export function getMatchesForPlayer(playerId: string): Match[] {
     .sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0));
 }
 
+/** All matches, most recent first. */
+export function getAllMatchesSorted(): Match[] {
+  return [...matches].sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0));
+}
+
+export function getMatchById(id: string): Match | undefined {
+  return matches.find((m) => m.id === id);
+}
+
+/** Total games won by each side, from the match's own scores (no per-player orientation). */
+export function getMatchGameTally(match: Match): { a: number; b: number } {
+  let a = 0;
+  let b = 0;
+  for (const game of match.scores) {
+    if (game.a > game.b) a++;
+    else b++;
+  }
+  return { a, b };
+}
+
 export function getOpponentId(match: Match, playerId: string): string {
   return match.playerAId === playerId ? match.playerBId : match.playerAId;
 }
@@ -82,4 +102,15 @@ export function getFlagEmoji(countryCode?: string): string {
   return countryCode
     .toUpperCase()
     .replace(/./g, (char) => String.fromCodePoint(127397 + char.charCodeAt(0)));
+}
+
+export function formatMatchDate(iso: string): string {
+  const [year, month, day] = iso.split("-").map(Number);
+  const date = new Date(Date.UTC(year ?? 0, (month ?? 1) - 1, day ?? 1));
+  return date.toLocaleDateString("en-US", {
+    month: "short",
+    day: "numeric",
+    year: "numeric",
+    timeZone: "UTC",
+  });
 }

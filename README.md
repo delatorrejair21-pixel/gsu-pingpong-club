@@ -82,7 +82,7 @@ Open [`data/matches.json`](data/matches.json) and add an object to the array:
 
 ```json
 {
-  "id": "m001",
+  "id": "m002",
   "date": "2026-09-02",
   "playerAId": "clarke-ellis",
   "playerBId": "sidh-jain",
@@ -115,6 +115,13 @@ Field notes:
 After adding a match, remember to bump the two players' `wins`/`losses`
 fields in `players.json` by hand if you want their overall record to reflect
 it — the site does not do this automatically.
+
+Every match also gets its own page at `/matches/<id>` — a head-to-head
+scoreboard with both players' photos, rank, and a per-game score table
+(the winning score in each game shown bold). It's linked from the Matches
+tab (lists every match, most recent first) and from each score in a
+player's match history. Nothing extra to configure — it's generated from
+the same `matches.json` entry.
 
 ## Updating the current week
 

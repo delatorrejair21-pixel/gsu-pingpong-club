@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "id": "m001",
+    "date": "2026-08-28",
+    "playerAId": "clarke-ellis",
+    "playerBId": "jair-de-la-torre",
+    "scores": [
+      { "a": 1, "b": 11 },
+      { "a": 11, "b": 7 },
+      { "a": 9, "b": 11 }
+    ],
+    "event": "Week 1"
+  }
+]
