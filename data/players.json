@@ -80,5 +80,15 @@
     "wins": 0,
     "losses": 0,
     "year": "Junior"
+  },
+  {
+    "id": "abdul-rehman",
+    "name": "Abdul Rehman",
+    "photo": "/players/abdul-rehman.png",
+    "country": "PK",
+    "rating": 1000,
+    "wins": 0,
+    "losses": 0,
+    "year": "Freshman"
   }
 ]
