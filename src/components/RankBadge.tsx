@@ -13,8 +13,13 @@ export function RankBadge({ rank, className = "" }: RankBadgeProps) {
   const colorClass = RANK_STYLES[rank] ?? "text-white/70";
   return (
     <span
-      className={`font-heading text-lg font-bold tabular-nums ${colorClass} ${className}`}
+      className={`inline-flex items-center gap-1 font-heading text-lg font-bold tabular-nums ${colorClass} ${className}`}
     >
+      {rank === 1 && (
+        <span aria-hidden className="text-base leading-none">
+          👑
+        </span>
+      )}
       {rank}
     </span>
   );
