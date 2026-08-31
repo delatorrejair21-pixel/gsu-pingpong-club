@@ -76,19 +76,25 @@ export function MatchHistoryTable({
                     href={`/matches/${match.id}`}
                     className="hover:text-accent-bright hover:underline"
                   >
-                    {gameScores.join(", ")}
+                    {outcome.result === null ? "Upcoming" : gameScores.join(", ")}
                   </Link>
                 </td>
                 <td className="py-3 text-center">
-                  <span
-                    className={`inline-flex h-6 w-6 items-center justify-center rounded font-heading text-xs font-bold ${
-                      outcome.result === "W"
-                        ? "bg-accent/20 text-accent-bright"
-                        : "bg-white/10 text-white/50"
-                    }`}
-                  >
-                    {outcome.result}
-                  </span>
+                  {outcome.result === null ? (
+                    <span className="inline-flex h-6 items-center rounded bg-white/5 px-2 font-heading text-[10px] font-bold uppercase tracking-wide text-white/40">
+                      TBD
+                    </span>
+                  ) : (
+                    <span
+                      className={`inline-flex h-6 w-6 items-center justify-center rounded font-heading text-xs font-bold ${
+                        outcome.result === "W"
+                          ? "bg-accent/20 text-accent-bright"
+                          : "bg-white/10 text-white/50"
+                      }`}
+                    >
+                      {outcome.result}
+                    </span>
+                  )}
                 </td>
                 <td className="py-3 pr-4 text-sm text-white/50">
                   {match.event ?? "—"}

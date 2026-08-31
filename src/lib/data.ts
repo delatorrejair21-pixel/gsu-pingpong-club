@@ -56,6 +56,15 @@ export function getMatchGameTally(match: Match): { a: number; b: number } {
   return { a, b };
 }
 
+/** A match with no recorded games yet is treated as upcoming/not yet played. */
+export function isMatchUpcoming(match: Match): boolean {
+  return match.scores.length === 0;
+}
+
+export function getPlayedMatches(): Match[] {
+  return matches.filter((m) => !isMatchUpcoming(m));
+}
+
 export function getOpponentId(match: Match, playerId: string): string {
   return match.playerAId === playerId ? match.playerBId : match.playerAId;
 }
@@ -64,7 +73,11 @@ export function getOpponentId(match: Match, playerId: string): string {
 export function getMatchOutcome(
   match: Match,
   playerId: string
-): { gamesWon: number; gamesLost: number; result: "W" | "L" } {
+): { gamesWon: number; gamesLost: number; result: "W" | "L" | null } {
+  if (isMatchUpcoming(match)) {
+    return { gamesWon: 0, gamesLost: 0, result: null };
+  }
+
   const isPlayerA = match.playerAId === playerId;
   let gamesWon = 0;
   let gamesLost = 0;

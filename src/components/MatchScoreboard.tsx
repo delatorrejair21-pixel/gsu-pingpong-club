@@ -1,6 +1,11 @@
 import Link from "next/link";
 import { PlayerPhoto } from "./PlayerPhoto";
-import { formatMatchDate, getFlagEmoji, getMatchGameTally } from "@/lib/data";
+import {
+  formatMatchDate,
+  getFlagEmoji,
+  getMatchGameTally,
+  isMatchUpcoming,
+} from "@/lib/data";
 import type { Match, RankedPlayer } from "@/lib/types";
 
 interface MatchScoreboardProps {
@@ -11,11 +16,19 @@ interface MatchScoreboardProps {
 
 export function MatchScoreboard({ match, playerA, playerB }: MatchScoreboardProps) {
   const tally = getMatchGameTally(match);
+  const upcoming = isMatchUpcoming(match);
 
   return (
     <div className="mx-auto max-w-2xl px-4 py-8 sm:px-6">
-      <div className="font-heading text-xl font-bold uppercase leading-tight text-white sm:text-2xl">
-        {match.event ?? "Match Result"}
+      <div className="flex flex-wrap items-center gap-3">
+        <div className="font-heading text-xl font-bold uppercase leading-tight text-white sm:text-2xl">
+          {match.event ?? "Match Result"}
+        </div>
+        {upcoming && (
+          <span className="rounded-full border border-ink-600 bg-ink-850 px-3 py-1 text-xs font-bold uppercase tracking-wider text-white/50">
+            Upcoming
+          </span>
+        )}
       </div>
       <div className="mt-1 text-sm font-semibold uppercase tracking-wide text-accent-bright">
         {formatMatchDate(match.date)}
@@ -26,31 +39,42 @@ export function MatchScoreboard({ match, playerA, playerB }: MatchScoreboardProp
         <MatchPlayerColumn player={playerB} align="right" />
       </div>
 
-      <div className="mt-8 overflow-x-auto rounded-lg border border-ink-700">
-        <table className="w-full min-w-[420px] border-collapse">
-          <thead>
-            <tr className="border-b border-ink-700 bg-ink-900/60 text-xs font-medium uppercase tracking-wider text-white/40">
-              <th className="py-3 pl-4 text-left sm:pl-6"></th>
-              <th className="py-3 text-center">Games</th>
-              <th className="py-3 pr-4 text-center sm:pr-6" colSpan={match.scores.length}>
-                Pts
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <ScoreRow name={playerA.name} games={tally.a} opponentGames={tally.b}>
-              {match.scores.map((game, i) => (
-                <ScoreCell key={i} value={game.a} won={game.a > game.b} />
-              ))}
-            </ScoreRow>
-            <ScoreRow name={playerB.name} games={tally.b} opponentGames={tally.a} last>
-              {match.scores.map((game, i) => (
-                <ScoreCell key={i} value={game.b} won={game.b > game.a} />
-              ))}
-            </ScoreRow>
-          </tbody>
-        </table>
-      </div>
+      {upcoming ? (
+        <div className="mt-8 rounded-lg border border-ink-700 bg-ink-850 px-6 py-8 text-center">
+          <div className="font-heading text-lg font-bold uppercase tracking-wide text-white/60">
+            Not Yet Played
+          </div>
+          <div className="mt-1 text-sm text-white/40">
+            Check back after this match is played for the score.
+          </div>
+        </div>
+      ) : (
+        <div className="mt-8 overflow-x-auto rounded-lg border border-ink-700">
+          <table className="w-full min-w-[420px] border-collapse">
+            <thead>
+              <tr className="border-b border-ink-700 bg-ink-900/60 text-xs font-medium uppercase tracking-wider text-white/40">
+                <th className="py-3 pl-4 text-left sm:pl-6"></th>
+                <th className="py-3 text-center">Games</th>
+                <th className="py-3 pr-4 text-center sm:pr-6" colSpan={match.scores.length}>
+                  Pts
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <ScoreRow name={playerA.name} games={tally.a} opponentGames={tally.b}>
+                {match.scores.map((game, i) => (
+                  <ScoreCell key={i} value={game.a} won={game.a > game.b} />
+                ))}
+              </ScoreRow>
+              <ScoreRow name={playerB.name} games={tally.b} opponentGames={tally.a} last>
+                {match.scores.map((game, i) => (
+                  <ScoreCell key={i} value={game.b} won={game.b > game.a} />
+                ))}
+              </ScoreRow>
+            </tbody>
+          </table>
+        </div>
+      )}
 
       <Link
         href="/matches"

@@ -108,6 +108,10 @@ Field notes:
   points>, "b": <player B's points> }`. The site counts how many games each
   side won to decide the match winner and show the W/L badge — you don't need
   to record who "won the match," just the game-by-game score.
+  **Leave this an empty array (`"scores": []`) to schedule an upcoming match**
+  before it's been played — the site shows it as "Upcoming" everywhere
+  instead of a score, with no W/L badge, until you come back and fill in
+  the actual game scores once it's played.
 - **`event`** — optional label shown next to the match (e.g. `"Fall Ladder
   Week 6"`, `"Friendly"`). Omit it if the match doesn't belong to a named
   event.

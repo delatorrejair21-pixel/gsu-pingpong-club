@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { PlayerAvatar } from "./PlayerAvatar";
-import { formatMatchDate, getMatchGameTally } from "@/lib/data";
+import { formatMatchDate, getMatchGameTally, isMatchUpcoming } from "@/lib/data";
 import type { Match, RankedPlayer } from "@/lib/types";
 
 interface MatchListItemProps {
@@ -11,6 +11,7 @@ interface MatchListItemProps {
 
 export function MatchListItem({ match, playerA, playerB }: MatchListItemProps) {
   const tally = getMatchGameTally(match);
+  const upcoming = isMatchUpcoming(match);
 
   return (
     <Link
@@ -32,19 +33,25 @@ export function MatchListItem({ match, playerA, playerB }: MatchListItemProps) {
           />
           <span
             className={`truncate font-medium ${
-              tally.a > tally.b ? "text-white" : "text-white/60"
+              !upcoming && tally.a > tally.b ? "text-white" : upcoming ? "text-white" : "text-white/60"
             }`}
           >
             {playerA.name}
           </span>
         </div>
-        <div className="shrink-0 px-2 font-heading text-lg font-bold tabular-nums text-accent-bright">
-          {tally.a}-{tally.b}
+        <div
+          className={`shrink-0 px-2 font-heading tabular-nums ${
+            upcoming
+              ? "text-xs font-bold uppercase tracking-wider text-white/40"
+              : "text-lg font-bold text-accent-bright"
+          }`}
+        >
+          {upcoming ? "Upcoming" : `${tally.a}-${tally.b}`}
         </div>
         <div className="flex min-w-0 flex-1 items-center justify-end gap-3">
           <span
             className={`truncate text-right font-medium ${
-              tally.b > tally.a ? "text-white" : "text-white/60"
+              !upcoming && tally.b > tally.a ? "text-white" : upcoming ? "text-white" : "text-white/60"
             }`}
           >
             {playerB.name}
