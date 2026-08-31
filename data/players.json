@@ -94,7 +94,8 @@
   {
     "id": "suchet-konda",
     "name": "Suchet Konda",
-    "photo": "/players/suchet-konda.jpg",
+    "photo": "/players/suchet-konda.png",
+    "avatarPosition": "center 5%",
     "country": "IN",
     "rating": 1000,
     "wins": 0,
