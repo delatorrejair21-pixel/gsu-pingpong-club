@@ -1,10 +1,14 @@
 # Table Tennis GSU — Rankings
 
-A dark, dense, pro-tour-style rankings site for Table Tennis GSU. No
-database — the whole site reads from hand-maintained JSON files:
+A dark, dense, pro-tour-style rankings site for Table Tennis GSU. Almost
+everything reads from hand-maintained JSON files:
 [`data/players.json`](data/players.json),
 [`data/matches.json`](data/matches.json), and
-[`data/season.json`](data/season.json).
+[`data/season.json`](data/season.json). The one exception is the "Who
+Wins?" poll on upcoming matches — those vote counts live in a small Redis
+database (see [Match prediction polls](#match-prediction-polls) below),
+since votes need to be shared live across every visitor, which a
+build-time JSON file can't do.
 
 Rank and the win/loss badge on a match are the only two things the code
 computes:
@@ -20,6 +24,7 @@ win percentage, no streaks.
 
 ```bash
 npm install
+vercel env pull .env.local   # gets the Redis credentials (see below)
 npm run dev
 ```
 
@@ -148,7 +153,29 @@ Drop image files into `public/players/`, named to match the `photo` path in
 matching file just shows an initials circle, so you can add photos whenever
 they become available.
 
+## Match prediction polls
+
+Every upcoming match (one with `"scores": []`) shows a "Who Wins?" poll on
+its `/matches/<id>` page — visitors vote for one side and immediately see
+the live percentage split. There's nothing to configure per-match; it just
+works for any match that hasn't been played yet, and disappears on its own
+once you fill in the real `scores` (replaced by the actual score table).
+
+This is the one part of the site backed by a real database instead of a
+JSON file — an [Upstash for Redis](https://vercel.com/marketplace/upstash/upstash-kv)
+database on the free plan, installed via the Vercel Marketplace and
+connected to this project. It stores one vote tally per match (auto-expiring
+after 60 days so old polls don't linger), and a browser can only vote once
+per match (enforced with a cookie, checked server-side too). The API lives
+at `src/app/api/votes/[matchId]/route.ts`; the Redis client config is in
+`src/lib/redis.ts`. To develop locally against the real database, run
+`vercel env pull .env.local` once (requires being logged into the Vercel
+CLI as a project member) to get the `KV_REST_API_URL` /
+`KV_REST_API_TOKEN` credentials.
+
 ## Deploying
 
 This is a stock Next.js 14 App Router project — push it to a GitHub repo and
-import it on [Vercel](https://vercel.com/new) with zero configuration.
+import it on [Vercel](https://vercel.com/new) with zero configuration
+(aside from the Redis env vars above, which stay attached to the Vercel
+project automatically once set up — nothing to redo on future deploys).

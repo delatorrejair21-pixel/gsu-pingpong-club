@@ -24,3 +24,9 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 .vercel
+.env*
+
+# claude code tooling (auto-fetched skill docs, not project source)
+/.agents
+/.claude
+skills-lock.json

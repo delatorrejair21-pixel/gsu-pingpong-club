@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { MatchPoll } from "./MatchPoll";
 import { PlayerPhoto } from "./PlayerPhoto";
 import {
   formatMatchDate,
@@ -40,14 +41,11 @@ export function MatchScoreboard({ match, playerA, playerB }: MatchScoreboardProp
       </div>
 
       {upcoming ? (
-        <div className="mt-8 rounded-lg border border-ink-700 bg-ink-850 px-6 py-8 text-center">
-          <div className="font-heading text-lg font-bold uppercase tracking-wide text-white/60">
-            Not Yet Played
-          </div>
-          <div className="mt-1 text-sm text-white/40">
-            Check back after this match is played for the score.
-          </div>
-        </div>
+        <MatchPoll
+          matchId={match.id}
+          playerAName={playerA.name}
+          playerBName={playerB.name}
+        />
       ) : (
         <div className="mt-8 overflow-x-auto rounded-lg border border-ink-700">
           <table className="w-full min-w-[420px] border-collapse">
