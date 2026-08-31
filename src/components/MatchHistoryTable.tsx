@@ -93,8 +93,8 @@ export function MatchHistoryTable({
                     <span
                       className={`inline-flex h-6 w-6 items-center justify-center rounded font-heading text-xs font-bold ${
                         outcome.result === "W"
-                          ? "bg-accent/20 text-accent-bright"
-                          : "bg-white/10 text-white/50"
+                          ? "bg-green-500/20 text-green-400"
+                          : "bg-red-500/20 text-red-400"
                       }`}
                     >
                       {outcome.result}
