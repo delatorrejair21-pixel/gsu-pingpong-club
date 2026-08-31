@@ -1,52 +1,62 @@
 [
   {
+    "id": "nicholas",
+    "name": "Nick",
+    "photo": "/players/nicholas.png",
+    "country": "AR",
+    "rating": 1000,
+    "wins": 0,
+    "losses": 0,
+    "year": "Junior"
+  },
+  {
     "id": "clarke-ellis",
     "name": "Clarke Ellis",
     "photo": "/players/clarke-ellis.png",
     "avatarPosition": "center 15%",
     "country": "JM",
-    "rating": 1050,
+    "rating": 1000,
     "wins": 0,
     "losses": 0,
     "year": "Senior"
   },
   {
-    "id": "edward",
-    "name": "Edward",
-    "photo": "/players/edward.png",
-    "avatarPosition": "center 10%",
-    "country": "NG",
-    "rating": 970,
+    "id": "abdul-rehman",
+    "name": "Abdul Rehman",
+    "photo": "/players/abdul-rehman.png",
+    "country": "PK",
+    "rating": 1000,
     "wins": 0,
     "losses": 0,
     "year": "Junior"
   },
   {
-    "id": "jair-de-la-torre",
-    "name": "Jair De La Torre",
-    "photo": "/players/jair-de-la-torre.png",
-    "country": "MX",
-    "rating": 990,
-    "wins": 0,
-    "losses": 0,
-    "year": "Junior"
-  },
-  {
-    "id": "sidh-jain",
-    "name": "Sidh Jain",
-    "photo": "/players/sidh-jain.jpg",
+    "id": "suchet-konda",
+    "name": "Suchet Konda",
+    "photo": "/players/suchet-konda.png",
+    "avatarPosition": "center 5%",
     "country": "IN",
-    "rating": 950,
+    "rating": 1000,
     "wins": 0,
     "losses": 0,
-    "year": "Sophomore"
+    "year": "Senior"
+  },
+  {
+    "id": "ethan-nguyen",
+    "name": "Ethan Nguyen",
+    "photo": "/players/ethan-nguyen.png",
+    "country": "VN",
+    "rating": 1000,
+    "wins": 0,
+    "losses": 0,
+    "year": "Junior"
   },
   {
     "id": "johnathan",
     "name": "Johnathan",
     "photo": "/players/johnathan.jpg",
     "country": "US",
-    "rating": 1010,
+    "rating": 1000,
     "wins": 0,
     "losses": 0,
     "year": "Junior"
@@ -62,52 +72,11 @@
     "year": "Sophomore"
   },
   {
-    "id": "nicholas",
-    "name": "Nick",
-    "photo": "/players/nicholas.png",
-    "country": "AR",
-    "rating": 1060,
-    "wins": 0,
-    "losses": 0,
-    "year": "Junior"
-  },
-  {
-    "id": "ethan-nguyen",
-    "name": "Ethan Nguyen",
-    "photo": "/players/ethan-nguyen.png",
-    "country": "VN",
-    "rating": 1020,
-    "wins": 0,
-    "losses": 0,
-    "year": "Junior"
-  },
-  {
-    "id": "abdul-rehman",
-    "name": "Abdul Rehman",
-    "photo": "/players/abdul-rehman.png",
-    "country": "PK",
-    "rating": 1040,
-    "wins": 0,
-    "losses": 0,
-    "year": "Junior"
-  },
-  {
-    "id": "suchet-konda",
-    "name": "Suchet Konda",
-    "photo": "/players/suchet-konda.png",
-    "avatarPosition": "center 5%",
-    "country": "IN",
-    "rating": 1030,
-    "wins": 0,
-    "losses": 0,
-    "year": "Senior"
-  },
-  {
-    "id": "vishal",
-    "name": "Vishal",
-    "photo": "/players/vishal.jpg",
-    "country": "IN",
-    "rating": 960,
+    "id": "jair-de-la-torre",
+    "name": "Jair De La Torre",
+    "photo": "/players/jair-de-la-torre.png",
+    "country": "MX",
+    "rating": 1000,
     "wins": 0,
     "losses": 0,
     "year": "Junior"
@@ -117,9 +86,40 @@
     "name": "Geethan",
     "photo": "/players/geethan.jpg",
     "country": "IN",
-    "rating": 980,
+    "rating": 1000,
     "wins": 0,
     "losses": 0,
     "year": "Junior"
+  },
+  {
+    "id": "edward",
+    "name": "Edward",
+    "photo": "/players/edward.png",
+    "avatarPosition": "center 10%",
+    "country": "NG",
+    "rating": 1000,
+    "wins": 0,
+    "losses": 0,
+    "year": "Junior"
+  },
+  {
+    "id": "vishal",
+    "name": "Vishal",
+    "photo": "/players/vishal.jpg",
+    "country": "IN",
+    "rating": 1000,
+    "wins": 0,
+    "losses": 0,
+    "year": "Junior"
+  },
+  {
+    "id": "sidh-jain",
+    "name": "Sidh Jain",
+    "photo": "/players/sidh-jain.jpg",
+    "country": "IN",
+    "rating": 1000,
+    "wins": 0,
+    "losses": 0,
+    "year": "Sophomore"
   }
 ]
