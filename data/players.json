@@ -15,7 +15,7 @@
     "photo": "/players/clarke-ellis.png",
     "avatarPosition": "center 15%",
     "country": "JM",
-    "rating": 1000,
+    "rating": 1010,
     "wins": 1,
     "losses": 0,
     "year": "Senior"
@@ -76,7 +76,7 @@
     "name": "Jair De La Torre",
     "photo": "/players/jair-de-la-torre.png",
     "country": "MX",
-    "rating": 1000,
+    "rating": 990,
     "wins": 0,
     "losses": 1,
     "year": "Junior"
