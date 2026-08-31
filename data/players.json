@@ -5,7 +5,7 @@
     "photo": "/players/clarke-ellis.png",
     "avatarPosition": "center 15%",
     "country": "JM",
-    "rating": 1000,
+    "rating": 1050,
     "wins": 0,
     "losses": 0,
     "year": "Senior"
@@ -16,7 +16,7 @@
     "photo": "/players/edward.png",
     "avatarPosition": "center 10%",
     "country": "NG",
-    "rating": 1000,
+    "rating": 970,
     "wins": 0,
     "losses": 0,
     "year": "Junior"
@@ -26,7 +26,7 @@
     "name": "Jair De La Torre",
     "photo": "/players/jair-de-la-torre.png",
     "country": "MX",
-    "rating": 1000,
+    "rating": 990,
     "wins": 0,
     "losses": 0,
     "year": "Junior"
@@ -36,7 +36,7 @@
     "name": "Sidh Jain",
     "photo": "/players/sidh-jain.jpg",
     "country": "IN",
-    "rating": 1000,
+    "rating": 950,
     "wins": 0,
     "losses": 0,
     "year": "Sophomore"
@@ -46,7 +46,7 @@
     "name": "Johnathan",
     "photo": "/players/johnathan.jpg",
     "country": "US",
-    "rating": 1000,
+    "rating": 1010,
     "wins": 0,
     "losses": 0,
     "year": "Junior"
@@ -66,7 +66,7 @@
     "name": "Nick",
     "photo": "/players/nicholas.png",
     "country": "AR",
-    "rating": 1000,
+    "rating": 1060,
     "wins": 0,
     "losses": 0,
     "year": "Junior"
@@ -76,7 +76,7 @@
     "name": "Ethan Nguyen",
     "photo": "/players/ethan-nguyen.png",
     "country": "VN",
-    "rating": 1000,
+    "rating": 1020,
     "wins": 0,
     "losses": 0,
     "year": "Junior"
@@ -86,7 +86,7 @@
     "name": "Abdul Rehman",
     "photo": "/players/abdul-rehman.png",
     "country": "PK",
-    "rating": 1000,
+    "rating": 1040,
     "wins": 0,
     "losses": 0,
     "year": "Junior"
@@ -97,7 +97,7 @@
     "photo": "/players/suchet-konda.png",
     "avatarPosition": "center 5%",
     "country": "IN",
-    "rating": 1000,
+    "rating": 1030,
     "wins": 0,
     "losses": 0,
     "year": "Senior"
@@ -107,7 +107,7 @@
     "name": "Vishal",
     "photo": "/players/vishal.jpg",
     "country": "IN",
-    "rating": 1000,
+    "rating": 960,
     "wins": 0,
     "losses": 0,
     "year": "Junior"
@@ -117,7 +117,7 @@
     "name": "Geethan",
     "photo": "/players/geethan.jpg",
     "country": "IN",
-    "rating": 1000,
+    "rating": 980,
     "wins": 0,
     "losses": 0,
     "year": "Junior"
