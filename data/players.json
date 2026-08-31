@@ -16,7 +16,7 @@
     "avatarPosition": "center 15%",
     "country": "JM",
     "rating": 1000,
-    "wins": 0,
+    "wins": 1,
     "losses": 0,
     "year": "Senior"
   },
@@ -78,7 +78,7 @@
     "country": "MX",
     "rating": 1000,
     "wins": 0,
-    "losses": 0,
+    "losses": 1,
     "year": "Junior"
   },
   {

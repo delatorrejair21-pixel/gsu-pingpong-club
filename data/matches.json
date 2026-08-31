@@ -28,7 +28,11 @@
     "date": "2026-08-31",
     "playerAId": "jair-de-la-torre",
     "playerBId": "clarke-ellis",
-    "scores": [],
+    "scores": [
+      { "a": 11, "b": 8 },
+      { "a": 5, "b": 11 },
+      { "a": 9, "b": 11 }
+    ],
     "event": "Round 1"
   },
   {
