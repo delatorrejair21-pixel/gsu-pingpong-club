@@ -5,6 +5,7 @@ import {
   formatMatchDate,
   getFlagEmoji,
   getMatchGameTally,
+  hasPerGameScores,
   isMatchUpcoming,
 } from "@/lib/data";
 import type { Match, RankedPlayer } from "@/lib/types";
@@ -45,6 +46,12 @@ export function MatchScoreboard({ match, playerA, playerB }: MatchScoreboardProp
           matchId={match.id}
           playerAName={playerA.name}
           playerBName={playerB.name}
+        />
+      ) : !hasPerGameScores(match) ? (
+        <FinalTallyCard
+          playerAName={playerA.name}
+          playerBName={playerB.name}
+          tally={tally}
         />
       ) : (
         <div className="mt-8 overflow-x-auto rounded-lg border border-ink-700">
@@ -118,6 +125,41 @@ function MatchPlayerColumn({
       >
         {player.name}
       </Link>
+    </div>
+  );
+}
+
+function FinalTallyCard({
+  playerAName,
+  playerBName,
+  tally,
+}: {
+  playerAName: string;
+  playerBName: string;
+  tally: { a: number; b: number };
+}) {
+  return (
+    <div className="mt-8 rounded-lg border border-ink-700 bg-ink-850 px-6 py-8 text-center">
+      <div className="font-heading text-xs font-bold uppercase tracking-widest text-white/40">
+        Final
+      </div>
+      <div className="mt-2 flex items-center justify-center gap-4 font-heading font-bold tabular-nums text-white sm:gap-6">
+        <span className={`text-4xl sm:text-5xl ${tally.a > tally.b ? "text-white" : "text-white/40"}`}>
+          {tally.a}
+        </span>
+        <span className="text-2xl text-white/30">-</span>
+        <span className={`text-4xl sm:text-5xl ${tally.b > tally.a ? "text-white" : "text-white/40"}`}>
+          {tally.b}
+        </span>
+      </div>
+      <div className="mt-2 flex items-center justify-center gap-4 text-xs text-white/50 sm:gap-6">
+        <span className="w-10 text-center sm:w-14">{playerAName}</span>
+        <span className="w-4" />
+        <span className="w-10 text-center sm:w-14">{playerBName}</span>
+      </div>
+      <div className="mt-4 text-sm text-white/40">
+        Per-game scores weren&apos;t reported for this match.
+      </div>
     </div>
   );
 }

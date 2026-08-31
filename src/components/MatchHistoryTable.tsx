@@ -5,6 +5,7 @@ import {
   getGameScoreStrings,
   getMatchOutcome,
   getOpponentId,
+  hasPerGameScores,
 } from "@/lib/data";
 import type { Match, Player } from "@/lib/types";
 
@@ -76,7 +77,11 @@ export function MatchHistoryTable({
                     href={`/matches/${match.id}`}
                     className="hover:text-accent-bright hover:underline"
                   >
-                    {outcome.result === null ? "Upcoming" : gameScores.join(", ")}
+                    {outcome.result === null
+                      ? "Upcoming"
+                      : hasPerGameScores(match)
+                        ? gameScores.join(", ")
+                        : `${outcome.gamesWon}-${outcome.gamesLost}`}
                   </Link>
                 </td>
                 <td className="py-3 text-center">

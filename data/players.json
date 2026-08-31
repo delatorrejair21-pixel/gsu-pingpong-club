@@ -4,8 +4,8 @@
     "name": "Nick",
     "photo": "/players/nicholas.png",
     "country": "AR",
-    "rating": 1000,
-    "wins": 0,
+    "rating": 1019,
+    "wins": 1,
     "losses": 0,
     "year": "Junior"
   },
@@ -46,8 +46,8 @@
     "name": "Ethan Nguyen",
     "photo": "/players/ethan-nguyen.png",
     "country": "VN",
-    "rating": 1000,
-    "wins": 0,
+    "rating": 1020,
+    "wins": 1,
     "losses": 0,
     "year": "Junior"
   },
@@ -97,9 +97,9 @@
     "photo": "/players/edward.png",
     "avatarPosition": "center 10%",
     "country": "NG",
-    "rating": 1000,
-    "wins": 0,
-    "losses": 0,
+    "rating": 991,
+    "wins": 1,
+    "losses": 1,
     "year": "Junior"
   },
   {
@@ -117,9 +117,9 @@
     "name": "Sidh Jain",
     "photo": "/players/sidh-jain.png",
     "country": "IN",
-    "rating": 1000,
+    "rating": 968,
     "wins": 0,
-    "losses": 0,
+    "losses": 2,
     "year": "Sophomore"
   }
 ]

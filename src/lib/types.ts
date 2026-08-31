@@ -31,6 +31,12 @@ export interface Match {
   playerAId: string;
   playerBId: string;
   scores: GameScore[];
+  /**
+   * Games won by each side, for a match reported as just a final tally
+   * (e.g. "2-1") with no per-game points. Only used when `scores` is empty —
+   * if `scores` has entries, the tally is always derived from them instead.
+   */
+  finalScore?: GameScore;
   event?: string;
 }
 

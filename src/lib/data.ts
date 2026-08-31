@@ -45,20 +45,31 @@ export function getMatchById(id: string): Match | undefined {
   return matches.find((m) => m.id === id);
 }
 
-/** Total games won by each side, from the match's own scores (no per-player orientation). */
-export function getMatchGameTally(match: Match): { a: number; b: number } {
-  let a = 0;
-  let b = 0;
-  for (const game of match.scores) {
-    if (game.a > game.b) a++;
-    else b++;
-  }
-  return { a, b };
+/** True when the match has per-game points recorded (not just a final tally). */
+export function hasPerGameScores(match: Match): boolean {
+  return match.scores.length > 0;
 }
 
-/** A match with no recorded games yet is treated as upcoming/not yet played. */
+/** Total games won by each side — from per-game scores if present, else the reported final tally. */
+export function getMatchGameTally(match: Match): { a: number; b: number } {
+  if (hasPerGameScores(match)) {
+    let a = 0;
+    let b = 0;
+    for (const game of match.scores) {
+      if (game.a > game.b) a++;
+      else b++;
+    }
+    return { a, b };
+  }
+  if (match.finalScore) {
+    return { a: match.finalScore.a, b: match.finalScore.b };
+  }
+  return { a: 0, b: 0 };
+}
+
+/** A match with no per-game scores and no final tally yet is upcoming/not yet played. */
 export function isMatchUpcoming(match: Match): boolean {
-  return match.scores.length === 0;
+  return match.scores.length === 0 && !match.finalScore;
 }
 
 export function getPlayedMatches(): Match[] {
@@ -69,7 +80,7 @@ export function getOpponentId(match: Match, playerId: string): string {
   return match.playerAId === playerId ? match.playerBId : match.playerAId;
 }
 
-/** Games won by counting each game's higher score, oriented to the given player. */
+/** Games won by counting each game's higher score (or the final tally), oriented to the given player. */
 export function getMatchOutcome(
   match: Match,
   playerId: string
@@ -79,15 +90,9 @@ export function getMatchOutcome(
   }
 
   const isPlayerA = match.playerAId === playerId;
-  let gamesWon = 0;
-  let gamesLost = 0;
-
-  for (const game of match.scores) {
-    const playerScore = isPlayerA ? game.a : game.b;
-    const opponentScore = isPlayerA ? game.b : game.a;
-    if (playerScore > opponentScore) gamesWon++;
-    else gamesLost++;
-  }
+  const tally = getMatchGameTally(match);
+  const gamesWon = isPlayerA ? tally.a : tally.b;
+  const gamesLost = isPlayerA ? tally.b : tally.a;
 
   return { gamesWon, gamesLost, result: gamesWon > gamesLost ? "W" : "L" };
 }

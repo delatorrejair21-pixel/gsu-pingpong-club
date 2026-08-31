@@ -21,6 +21,7 @@
     "playerAId": "ethan-nguyen",
     "playerBId": "edward",
     "scores": [],
+    "finalScore": { "a": 2, "b": 0 },
     "event": "Round 1"
   },
   {
@@ -97,6 +98,7 @@
     "playerAId": "sidh-jain",
     "playerBId": "nicholas",
     "scores": [],
+    "finalScore": { "a": 0, "b": 2 },
     "event": "Round 2"
   },
   {
@@ -129,6 +131,7 @@
     "playerAId": "sidh-jain",
     "playerBId": "edward",
     "scores": [],
+    "finalScore": { "a": 1, "b": 2 },
     "event": "Round 3"
   },
   {

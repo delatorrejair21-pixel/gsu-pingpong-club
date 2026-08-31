@@ -125,6 +125,32 @@ After adding a match, remember to bump the two players' `wins`/`losses`
 fields in `players.json` by hand if you want their overall record to reflect
 it — the site does not do this automatically.
 
+### Recording just a final score (no per-game points)
+
+Most matches will probably only get reported as a final tally like "2-1,"
+not game-by-game. For those, leave `"scores": []` and add a `finalScore`
+instead:
+
+```json
+{
+  "id": "m020",
+  "date": "2026-09-02",
+  "playerAId": "clarke-ellis",
+  "playerBId": "sidh-jain",
+  "scores": [],
+  "finalScore": { "a": 2, "b": 1 },
+  "event": "Fall Ladder Week 6"
+}
+```
+
+`finalScore.a` / `finalScore.b` are games won by player A / player B. The
+site treats this exactly like a played match everywhere (records, "Matches
+Played" count, W/L badges) — the only difference is the match's own page
+shows a plain "FINAL 2-1" instead of a per-game score table, since there's
+no game-by-game detail to show. If you ever do have the per-game scores,
+use `scores` instead (as in the example above it) and skip `finalScore`
+entirely — `scores` always takes priority when both are present.
+
 Every match also gets its own page at `/matches/<id>` — a head-to-head
 scoreboard with both players' photos, rank, and a per-game score table
 (the winning score in each game shown bold). It's linked from the Matches
