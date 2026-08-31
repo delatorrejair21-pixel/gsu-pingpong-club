@@ -90,5 +90,35 @@
     "wins": 0,
     "losses": 0,
     "year": "Junior"
+  },
+  {
+    "id": "suchet-konda",
+    "name": "Suchet Konda",
+    "photo": "/players/suchet-konda.jpg",
+    "country": "IN",
+    "rating": 1000,
+    "wins": 0,
+    "losses": 0,
+    "year": "Senior"
+  },
+  {
+    "id": "vishal",
+    "name": "Vishal",
+    "photo": "/players/vishal.jpg",
+    "country": "IN",
+    "rating": 1000,
+    "wins": 0,
+    "losses": 0,
+    "year": "Junior"
+  },
+  {
+    "id": "geethan",
+    "name": "Geethan",
+    "photo": "/players/geethan.jpg",
+    "country": "IN",
+    "rating": 1000,
+    "wins": 0,
+    "losses": 0,
+    "year": "Junior"
   }
 ]
