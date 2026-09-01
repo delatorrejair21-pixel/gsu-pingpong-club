@@ -36,8 +36,8 @@
     "photo": "/players/suchet-konda.png",
     "avatarPosition": "center 5%",
     "country": "IN",
-    "rating": 1000,
-    "wins": 0,
+    "rating": 1043,
+    "wins": 3,
     "losses": 0,
     "year": "Senior"
   },
@@ -56,9 +56,9 @@
     "name": "Johnathan",
     "photo": "/players/johnathan.jpg",
     "country": "US",
-    "rating": 1000,
+    "rating": 981,
     "wins": 0,
-    "losses": 0,
+    "losses": 2,
     "year": "Junior"
   },
   {
@@ -77,8 +77,8 @@
     "photo": "/players/jair-de-la-torre.png",
     "country": "MX",
     "rating": 990,
-    "wins": 0,
-    "losses": 1,
+    "wins": 1,
+    "losses": 2,
     "year": "Junior"
   },
   {
@@ -107,9 +107,9 @@
     "name": "Vishal",
     "photo": "/players/vishal.jpg",
     "country": "IN",
-    "rating": 1000,
-    "wins": 0,
-    "losses": 0,
+    "rating": 983,
+    "wins": 1,
+    "losses": 1,
     "year": "Junior"
   },
   {
@@ -117,9 +117,9 @@
     "name": "Sidh Jain",
     "photo": "/players/sidh-jain.png",
     "country": "IN",
-    "rating": 968,
+    "rating": 948,
     "wins": 0,
-    "losses": 2,
+    "losses": 3,
     "year": "Sophomore"
   }
 ]
