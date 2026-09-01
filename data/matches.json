@@ -18,7 +18,7 @@
   },
   {
     "id": "m004",
-    "date": "2026-09-01",
+    "date": "2026-08-31",
     "playerAId": "ethan-nguyen",
     "playerBId": "edward",
     "scores": [],
@@ -27,7 +27,7 @@
   },
   {
     "id": "m005",
-    "date": "2026-09-01",
+    "date": "2026-08-31",
     "playerAId": "jair-de-la-torre",
     "playerBId": "clarke-ellis",
     "scores": [
@@ -97,7 +97,7 @@
   },
   {
     "id": "m013",
-    "date": "2026-09-01",
+    "date": "2026-08-31",
     "playerAId": "sidh-jain",
     "playerBId": "nicholas",
     "scores": [],
@@ -131,7 +131,7 @@
   },
   {
     "id": "m017",
-    "date": "2026-09-01",
+    "date": "2026-08-31",
     "playerAId": "sidh-jain",
     "playerBId": "edward",
     "scores": [],
