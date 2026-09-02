@@ -4,8 +4,8 @@
     "name": "Nick",
     "photo": "/players/nicholas.png",
     "country": "AR",
-    "rating": 1038,
-    "wins": 2,
+    "rating": 1046,
+    "wins": 3,
     "losses": 0,
     "year": "Junior"
   },
@@ -15,9 +15,9 @@
     "photo": "/players/clarke-ellis.png",
     "avatarPosition": "center 15%",
     "country": "JM",
-    "rating": 1010,
+    "rating": 1002,
     "wins": 1,
-    "losses": 0,
+    "losses": 1,
     "year": "Senior"
   },
   {
