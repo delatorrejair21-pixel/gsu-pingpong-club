@@ -4,8 +4,8 @@
     "name": "Nick",
     "photo": "/players/nicholas.png",
     "country": "AR",
-    "rating": 1019,
-    "wins": 1,
+    "rating": 1038,
+    "wins": 2,
     "losses": 0,
     "year": "Junior"
   },
@@ -25,9 +25,9 @@
     "name": "Abdul Rehman",
     "photo": "/players/abdul-rehman.png",
     "country": "PK",
-    "rating": 1000,
+    "rating": 981,
     "wins": 0,
-    "losses": 0,
+    "losses": 1,
     "year": "Junior"
   },
   {
