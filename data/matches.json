@@ -84,22 +84,6 @@
     "event": "Round 2"
   },
   {
-    "id": "m011",
-    "date": "2026-09-03",
-    "playerAId": "abdul-rehman",
-    "playerBId": "edward",
-    "scores": [],
-    "event": "Round 2"
-  },
-  {
-    "id": "m012",
-    "date": "2026-09-03",
-    "playerAId": "vishal",
-    "playerBId": "clarke-ellis",
-    "scores": [],
-    "event": "Round 2"
-  },
-  {
     "id": "m013",
     "date": "2026-08-31",
     "playerAId": "sidh-jain",
@@ -115,14 +99,6 @@
     "playerBId": "ethan-nguyen",
     "scores": [],
     "finalScore": { "a": 1, "b": 2 },
-    "event": "Round 3"
-  },
-  {
-    "id": "m015",
-    "date": "2026-09-03",
-    "playerAId": "naffi-tadesse",
-    "playerBId": "abdul-rehman",
-    "scores": [],
     "event": "Round 3"
   },
   {
