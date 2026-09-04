@@ -46,9 +46,9 @@
     "name": "Ethan Nguyen",
     "photo": "/players/ethan-nguyen.png",
     "country": "VN",
-    "rating": 1020,
-    "wins": 1,
-    "losses": 0,
+    "rating": 1018,
+    "wins": 2,
+    "losses": 1,
     "year": "Junior"
   },
   {
@@ -56,8 +56,8 @@
     "name": "Johnathan",
     "photo": "/players/johnathan.jpg",
     "country": "US",
-    "rating": 981,
-    "wins": 0,
+    "rating": 992,
+    "wins": 1,
     "losses": 2,
     "year": "Junior"
   },
@@ -67,8 +67,8 @@
     "photo": "/players/naffi-tadesse.png",
     "country": "ET",
     "rating": 1000,
-    "wins": 0,
-    "losses": 0,
+    "wins": 1,
+    "losses": 1,
     "year": "Sophomore"
   },
   {
@@ -86,9 +86,9 @@
     "name": "Geethan",
     "photo": "/players/geethan.jpg",
     "country": "IN",
-    "rating": 1000,
-    "wins": 0,
-    "losses": 0,
+    "rating": 988,
+    "wins": 1,
+    "losses": 2,
     "year": "Junior"
   },
   {

@@ -1,10 +1,11 @@
 [
   {
     "id": "m002",
-    "date": "2026-09-03",
+    "date": "2026-09-02",
     "playerAId": "geethan",
     "playerBId": "naffi-tadesse",
     "scores": [],
+    "finalScore": { "a": 2, "b": 1 },
     "event": "Round 1"
   },
   {
@@ -57,18 +58,20 @@
   },
   {
     "id": "m008",
-    "date": "2026-09-03",
+    "date": "2026-09-02",
     "playerAId": "geethan",
     "playerBId": "johnathan",
     "scores": [],
+    "finalScore": { "a": 1, "b": 2 },
     "event": "Round 2"
   },
   {
     "id": "m009",
-    "date": "2026-09-03",
+    "date": "2026-09-02",
     "playerAId": "naffi-tadesse",
     "playerBId": "ethan-nguyen",
     "scores": [],
+    "finalScore": { "a": 2, "b": 1 },
     "event": "Round 2"
   },
   {
@@ -107,10 +110,11 @@
   },
   {
     "id": "m014",
-    "date": "2026-09-03",
+    "date": "2026-09-02",
     "playerAId": "geethan",
     "playerBId": "ethan-nguyen",
     "scores": [],
+    "finalScore": { "a": 1, "b": 2 },
     "event": "Round 3"
   },
   {
