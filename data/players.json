@@ -121,5 +121,41 @@
     "wins": 0,
     "losses": 3,
     "year": "Sophomore"
+  },
+  {
+    "id": "krish",
+    "name": "Krish",
+    "photo": "/players/krish.jpg",
+    "rating": 1000,
+    "wins": 0,
+    "losses": 0,
+    "year": "Freshman"
+  },
+  {
+    "id": "prasang",
+    "name": "Prasang",
+    "photo": "/players/prasang.jpg",
+    "rating": 1000,
+    "wins": 0,
+    "losses": 0,
+    "year": "Freshman"
+  },
+  {
+    "id": "naveen",
+    "name": "Naveen",
+    "photo": "/players/naveen.jpg",
+    "rating": 1000,
+    "wins": 0,
+    "losses": 0,
+    "year": "Freshman"
+  },
+  {
+    "id": "chris",
+    "name": "Chris",
+    "photo": "/players/chris.jpg",
+    "rating": 1000,
+    "wins": 0,
+    "losses": 0,
+    "year": "Freshman"
   }
 ]
