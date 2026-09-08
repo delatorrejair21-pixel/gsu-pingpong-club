@@ -124,12 +124,13 @@
   },
   {
     "id": "krish",
-    "name": "Krish",
-    "photo": "/players/krish.jpg",
+    "name": "Krish Keshwani",
+    "photo": "/players/krish.png",
+    "country": "IN",
     "rating": 1000,
     "wins": 0,
     "losses": 0,
-    "year": "Freshman"
+    "year": "Senior"
   },
   {
     "id": "prasang",
