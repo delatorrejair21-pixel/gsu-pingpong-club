@@ -148,6 +148,7 @@
     "id": "naveen",
     "name": "Naveen",
     "photo": "/players/naveen.jpg",
+    "country": "IN",
     "rating": 1000,
     "wins": 0,
     "losses": 0,
