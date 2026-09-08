@@ -136,6 +136,7 @@
     "id": "prasang",
     "name": "Prasang",
     "photo": "/players/prasang.jpg",
+    "country": "KR",
     "rating": 1000,
     "wins": 0,
     "losses": 0,
