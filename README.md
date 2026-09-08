@@ -80,6 +80,13 @@ Field notes:
   `"IN"`, `"NG"`, `"VN"`) shown as a flag next to the player's name on both
   the leaderboard and their profile. Omit it and no flag shows. It's rendered
   as an emoji from the code, so there's no image file to upload for this one.
+- **`unranked`** — optional boolean. Set `true` for a player you don't want
+  mixed into the ranked leaderboard yet (e.g. a brand-new player you're not
+  sure will stick around). They show in a separate "Unranked" section below
+  the main table instead of getting a rank number, and their own profile
+  page and match pages show "Unranked" instead of a rank badge. Their
+  `rating` still matters once you remove this flag — set it whenever you're
+  ready to fold them into the real rankings.
 
 ## Recording a match
 

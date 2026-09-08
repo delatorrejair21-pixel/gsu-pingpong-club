@@ -19,11 +19,22 @@ export function getAllMatches(): Match[] {
   return matches;
 }
 
-/** Rank is derived by sorting players by rating, descending. */
+/**
+ * Rank is derived by sorting ranked (non-`unranked`) players by rating,
+ * descending. Players marked `unranked` get `rank: null` and are appended
+ * after everyone else, unaffected by rating.
+ */
 export function getRankedPlayers(): RankedPlayer[] {
-  return [...players]
+  const ranked = players
+    .filter((p) => !p.unranked)
     .sort((a, b) => b.rating - a.rating)
     .map((player, index) => ({ ...player, rank: index + 1 }));
+
+  const unranked = players
+    .filter((p) => p.unranked)
+    .map((player) => ({ ...player, rank: null }));
+
+  return [...ranked, ...unranked];
 }
 
 export function getPlayerById(id: string): RankedPlayer | undefined {

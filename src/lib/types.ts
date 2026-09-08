@@ -18,6 +18,8 @@ export interface Player {
   note?: string;
   avatarPosition?: string;
   country?: string;
+  /** Excluded from the ranked leaderboard and listed separately as "Unranked". */
+  unranked?: boolean;
 }
 
 export interface GameScore {
@@ -41,7 +43,8 @@ export interface Match {
 }
 
 export interface RankedPlayer extends Player {
-  rank: number;
+  /** null for a player marked `unranked` — excluded from ranking. */
+  rank: number | null;
 }
 
 export interface Season {

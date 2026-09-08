@@ -21,6 +21,9 @@ export function LeaderboardClient({ players }: LeaderboardClientProps) {
     return players.filter((p) => p.name.toLowerCase().includes(q));
   }, [players, query]);
 
+  const rankedPlayers = filtered.filter((p) => p.rank !== null);
+  const unrankedPlayers = filtered.filter((p) => p.rank === null);
+
   return (
     <div>
       <div className="px-4 pb-4 pt-6 sm:px-6">
@@ -53,62 +56,92 @@ export function LeaderboardClient({ players }: LeaderboardClientProps) {
           No players match &ldquo;{query}&rdquo;.
         </div>
       ) : (
-        <table className="w-full border-collapse text-left">
-          <thead>
-            <tr className="border-y border-ink-700 text-xs font-medium uppercase tracking-wider text-white/40">
-              <th className="w-14 py-3 pl-4 sm:pl-6">Rank</th>
-              <th className="py-3">Player</th>
-              <th className="hidden py-3 text-right sm:table-cell">Record</th>
-              <th className="w-20 py-3 pr-4 text-right sm:pr-6">Rating</th>
-            </tr>
-          </thead>
-          <tbody>
-            {filtered.map((player) => (
-              <tr
-                key={player.id}
-                onClick={() => router.push(`/player/${player.id}`)}
-                className="cursor-pointer border-b border-ink-800 transition-colors hover:bg-ink-850 focus-visible:bg-ink-850"
-                tabIndex={0}
-                role="link"
-                onKeyDown={(e) => {
-                  if (e.key === "Enter") router.push(`/player/${player.id}`);
-                }}
-              >
-                <td className="py-3 pl-4 sm:pl-6">
-                  <RankBadge rank={player.rank} />
-                </td>
-                <td className="py-3">
-                  <div className="flex items-center gap-3">
-                    <PlayerAvatar
-                      name={player.name}
-                      photo={player.photo}
-                      size={36}
-                      position={player.avatarPosition}
-                    />
-                    <div>
-                      <div className="flex items-center gap-1.5 font-medium leading-tight text-white">
-                        {player.country && (
-                          <span aria-hidden>{getFlagEmoji(player.country)}</span>
-                        )}
-                        {player.name}
-                      </div>
-                      <div className="text-xs text-white/40 sm:hidden">
-                        {player.wins}-{player.losses}
-                      </div>
-                    </div>
-                  </div>
-                </td>
-                <td className="hidden py-3 text-right tabular-nums text-white/70 sm:table-cell">
-                  {player.wins}-{player.losses}
-                </td>
-                <td className="py-3 pr-4 text-right font-heading font-semibold tabular-nums text-accent-bright sm:pr-6">
-                  {player.rating}
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+        <>
+          {rankedPlayers.length > 0 && (
+            <table className="w-full border-collapse text-left">
+              <thead>
+                <tr className="border-y border-ink-700 text-xs font-medium uppercase tracking-wider text-white/40">
+                  <th className="w-14 py-3 pl-4 sm:pl-6">Rank</th>
+                  <th className="py-3">Player</th>
+                  <th className="hidden py-3 text-right sm:table-cell">Record</th>
+                  <th className="w-20 py-3 pr-4 text-right sm:pr-6">Rating</th>
+                </tr>
+              </thead>
+              <tbody>
+                {rankedPlayers.map((player) => (
+                  <PlayerRow key={player.id} player={player} router={router} />
+                ))}
+              </tbody>
+            </table>
+          )}
+
+          {unrankedPlayers.length > 0 && (
+            <div>
+              <div className="border-y border-ink-700 bg-ink-900/40 px-4 py-2 text-xs font-bold uppercase tracking-wider text-white/40 sm:px-6">
+                Unranked
+              </div>
+              <table className="w-full border-collapse text-left">
+                <tbody>
+                  {unrankedPlayers.map((player) => (
+                    <PlayerRow key={player.id} player={player} router={router} />
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          )}
+        </>
       )}
     </div>
+  );
+}
+
+function PlayerRow({
+  player,
+  router,
+}: {
+  player: RankedPlayer;
+  router: ReturnType<typeof useRouter>;
+}) {
+  return (
+    <tr
+      onClick={() => router.push(`/player/${player.id}`)}
+      className="cursor-pointer border-b border-ink-800 transition-colors hover:bg-ink-850 focus-visible:bg-ink-850"
+      tabIndex={0}
+      role="link"
+      onKeyDown={(e) => {
+        if (e.key === "Enter") router.push(`/player/${player.id}`);
+      }}
+    >
+      <td className="w-14 py-3 pl-4 sm:pl-6">
+        <RankBadge rank={player.rank} />
+      </td>
+      <td className="py-3">
+        <div className="flex items-center gap-3">
+          <PlayerAvatar
+            name={player.name}
+            photo={player.photo}
+            size={36}
+            position={player.avatarPosition}
+          />
+          <div>
+            <div className="flex items-center gap-1.5 font-medium leading-tight text-white">
+              {player.country && (
+                <span aria-hidden>{getFlagEmoji(player.country)}</span>
+              )}
+              {player.name}
+            </div>
+            <div className="text-xs text-white/40 sm:hidden">
+              {player.wins}-{player.losses}
+            </div>
+          </div>
+        </div>
+      </td>
+      <td className="hidden py-3 text-right tabular-nums text-white/70 sm:table-cell">
+        {player.wins}-{player.losses}
+      </td>
+      <td className="py-3 pr-4 text-right font-heading font-semibold tabular-nums text-accent-bright sm:pr-6">
+        {player.rating}
+      </td>
+    </tr>
   );
 }

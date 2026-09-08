@@ -103,8 +103,14 @@ function MatchPlayerColumn({
 
   return (
     <div className={`flex flex-col ${isLeft ? "items-start" : "items-end"}`}>
-      <div className="font-heading text-2xl font-bold text-accent-bright sm:text-3xl">
-        #{player.rank}
+      <div
+        className={
+          player.rank === null
+            ? "font-heading text-xs font-bold uppercase tracking-wider text-white/40 sm:text-sm"
+            : "font-heading text-2xl font-bold text-accent-bright sm:text-3xl"
+        }
+      >
+        {player.rank === null ? "Unranked" : `#${player.rank}`}
       </div>
       <div className="mt-2 w-full flex justify-center">
         <PlayerPhoto name={player.name} photo={player.photo} size={140} />

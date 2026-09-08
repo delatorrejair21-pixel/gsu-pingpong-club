@@ -1,5 +1,5 @@
 interface RankBadgeProps {
-  rank: number;
+  rank: number | null;
   className?: string;
 }
 
@@ -10,6 +10,16 @@ const RANK_STYLES: Record<number, string> = {
 };
 
 export function RankBadge({ rank, className = "" }: RankBadgeProps) {
+  if (rank === null) {
+    return (
+      <span
+        className={`font-heading text-xs font-bold uppercase tracking-wider text-white/40 ${className}`}
+      >
+        Unranked
+      </span>
+    );
+  }
+
   const colorClass = RANK_STYLES[rank] ?? "text-white/70";
   return (
     <span

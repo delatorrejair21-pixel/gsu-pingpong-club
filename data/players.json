@@ -130,7 +130,8 @@
     "rating": 1000,
     "wins": 0,
     "losses": 0,
-    "year": "Senior"
+    "year": "Senior",
+    "unranked": true
   },
   {
     "id": "prasang",
@@ -140,7 +141,8 @@
     "rating": 1000,
     "wins": 0,
     "losses": 0,
-    "year": "Freshman"
+    "year": "Freshman",
+    "unranked": true
   },
   {
     "id": "naveen",
@@ -149,7 +151,8 @@
     "rating": 1000,
     "wins": 0,
     "losses": 0,
-    "year": "Freshman"
+    "year": "Freshman",
+    "unranked": true
   },
   {
     "id": "chris",
@@ -158,6 +161,7 @@
     "rating": 1000,
     "wins": 0,
     "losses": 0,
-    "year": "Freshman"
+    "year": "Freshman",
+    "unranked": true
   }
 ]

@@ -13,9 +13,11 @@ export function PlayerHero({ player }: PlayerHeroProps) {
       <PlayerPhoto name={player.name} photo={player.photo} />
       <div>
         <div className="flex flex-wrap items-center justify-center gap-2">
-          <span className="text-xs font-medium uppercase tracking-wider text-white/40">
-            Rank
-          </span>
+          {player.rank !== null && (
+            <span className="text-xs font-medium uppercase tracking-wider text-white/40">
+              Rank
+            </span>
+          )}
           <RankBadge rank={player.rank} />
         </div>
         <h1 className="mt-1 flex items-center justify-center gap-2.5 font-heading text-3xl font-bold uppercase leading-tight text-white sm:text-4xl">
