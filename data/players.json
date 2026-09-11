@@ -25,8 +25,8 @@
     "name": "Abdul Rehman",
     "photo": "/players/abdul-rehman.png",
     "country": "PK",
-    "rating": 981,
-    "wins": 0,
+    "rating": 1002,
+    "wins": 1,
     "losses": 1,
     "year": "Junior"
   },
@@ -107,9 +107,9 @@
     "name": "Vishal",
     "photo": "/players/vishal.png",
     "country": "IN",
-    "rating": 983,
-    "wins": 1,
-    "losses": 1,
+    "rating": 982,
+    "wins": 2,
+    "losses": 2,
     "year": "Junior"
   },
   {
@@ -138,9 +138,9 @@
     "name": "Prasang",
     "photo": "/players/prasang.jpg",
     "country": "KR",
-    "rating": 1000,
+    "rating": 979,
     "wins": 0,
-    "losses": 0,
+    "losses": 1,
     "year": "Freshman",
     "unranked": true
   },
