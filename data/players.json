@@ -130,8 +130,7 @@
     "rating": 1020,
     "wins": 1,
     "losses": 0,
-    "year": "Senior",
-    "unranked": true
+    "year": "Senior"
   },
   {
     "id": "prasang",
@@ -141,8 +140,7 @@
     "rating": 966,
     "wins": 0,
     "losses": 2,
-    "year": "Freshman",
-    "unranked": true
+    "year": "Freshman"
   },
   {
     "id": "naveen",
