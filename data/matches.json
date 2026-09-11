@@ -265,10 +265,11 @@
   },
   {
     "id": "m035",
-    "date": "2026-09-08",
+    "date": "2026-09-10",
     "playerAId": "krish",
     "playerBId": "naffi-tadesse",
     "scores": [],
+    "finalScore": { "a": 2, "b": 0 },
     "event": "Round 3"
   },
   {

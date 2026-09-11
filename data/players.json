@@ -66,9 +66,9 @@
     "name": "Naffi Tadesse",
     "photo": "/players/naffi-tadesse.png",
     "country": "ET",
-    "rating": 1000,
+    "rating": 980,
     "wins": 1,
-    "losses": 1,
+    "losses": 2,
     "year": "Sophomore"
   },
   {
@@ -127,8 +127,8 @@
     "name": "Krish Keshwani",
     "photo": "/players/krish.png",
     "country": "IN",
-    "rating": 1000,
-    "wins": 0,
+    "rating": 1020,
+    "wins": 1,
     "losses": 0,
     "year": "Senior",
     "unranked": true
