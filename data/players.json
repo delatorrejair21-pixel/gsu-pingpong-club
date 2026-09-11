@@ -25,8 +25,8 @@
     "name": "Abdul Rehman",
     "photo": "/players/abdul-rehman.png",
     "country": "PK",
-    "rating": 1002,
-    "wins": 1,
+    "rating": 1019,
+    "wins": 2,
     "losses": 1,
     "year": "Junior"
   },
@@ -117,9 +117,9 @@
     "name": "Sidh Jain",
     "photo": "/players/sidh-jain.png",
     "country": "IN",
-    "rating": 948,
-    "wins": 0,
-    "losses": 3,
+    "rating": 942,
+    "wins": 1,
+    "losses": 4,
     "year": "Sophomore"
   },
   {
@@ -138,9 +138,9 @@
     "name": "Prasang",
     "photo": "/players/prasang.jpg",
     "country": "KR",
-    "rating": 979,
+    "rating": 966,
     "wins": 0,
-    "losses": 1,
+    "losses": 2,
     "year": "Freshman",
     "unranked": true
   },

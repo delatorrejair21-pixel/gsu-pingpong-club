@@ -180,10 +180,11 @@
   },
   {
     "id": "m025",
-    "date": "2026-09-08",
+    "date": "2026-09-10",
     "playerAId": "sidh-jain",
     "playerBId": "prasang",
     "scores": [],
+    "finalScore": { "a": 2, "b": 1 },
     "event": "Round 1"
   },
   {
@@ -228,10 +229,11 @@
   },
   {
     "id": "m031",
-    "date": "2026-09-08",
+    "date": "2026-09-10",
     "playerAId": "abdul-rehman",
     "playerBId": "sidh-jain",
     "scores": [],
+    "finalScore": { "a": 2, "b": 0 },
     "event": "Round 2"
   },
   {
