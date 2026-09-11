@@ -254,10 +254,11 @@
   },
   {
     "id": "m034",
-    "date": "2026-09-08",
+    "date": "2026-09-10",
     "playerAId": "suchet-konda",
     "playerBId": "clarke-ellis",
     "scores": [],
+    "finalScore": { "a": 2, "b": 0 },
     "event": "Round 3"
   },
   {

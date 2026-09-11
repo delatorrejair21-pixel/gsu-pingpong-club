@@ -15,9 +15,9 @@
     "photo": "/players/clarke-ellis.png",
     "avatarPosition": "center 15%",
     "country": "JM",
-    "rating": 1002,
+    "rating": 984,
     "wins": 1,
-    "losses": 1,
+    "losses": 2,
     "year": "Senior"
   },
   {
@@ -36,8 +36,8 @@
     "photo": "/players/suchet-konda.png",
     "avatarPosition": "center 5%",
     "country": "IN",
-    "rating": 1043,
-    "wins": 3,
+    "rating": 1060,
+    "wins": 4,
     "losses": 0,
     "year": "Senior"
   },
