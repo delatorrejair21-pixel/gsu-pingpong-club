@@ -163,10 +163,11 @@
   },
   {
     "id": "m023",
-    "date": "2026-09-08",
+    "date": "2026-09-10",
     "playerAId": "jair-de-la-torre",
     "playerBId": "geethan",
     "scores": [],
+    "finalScore": { "a": 2, "b": 0 },
     "event": "Round 1"
   },
   {
@@ -213,10 +214,11 @@
   },
   {
     "id": "m029",
-    "date": "2026-09-08",
+    "date": "2026-09-10",
     "playerAId": "edward",
     "playerBId": "jair-de-la-torre",
     "scores": [],
+    "finalScore": { "a": 0, "b": 2 },
     "event": "Round 2"
   },
   {
@@ -271,10 +273,11 @@
   },
   {
     "id": "m036",
-    "date": "2026-09-08",
+    "date": "2026-09-10",
     "playerAId": "johnathan",
     "playerBId": "jair-de-la-torre",
     "scores": [],
+    "finalScore": { "a": 1, "b": 2 },
     "event": "Round 3"
   },
   {

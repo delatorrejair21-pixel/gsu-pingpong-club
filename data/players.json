@@ -56,9 +56,9 @@
     "name": "Johnathan",
     "photo": "/players/johnathan.jpg",
     "country": "US",
-    "rating": 992,
+    "rating": 982,
     "wins": 1,
-    "losses": 2,
+    "losses": 3,
     "year": "Junior"
   },
   {
@@ -76,8 +76,8 @@
     "name": "Jair De La Torre",
     "photo": "/players/jair-de-la-torre.png",
     "country": "MX",
-    "rating": 990,
-    "wins": 1,
+    "rating": 1039,
+    "wins": 4,
     "losses": 2,
     "year": "Junior"
   },
@@ -86,9 +86,9 @@
     "name": "Geethan",
     "photo": "/players/geethan.jpg",
     "country": "IN",
-    "rating": 988,
+    "rating": 968,
     "wins": 1,
-    "losses": 2,
+    "losses": 3,
     "year": "Junior"
   },
   {
@@ -97,9 +97,9 @@
     "photo": "/players/edward.png",
     "avatarPosition": "center 10%",
     "country": "NG",
-    "rating": 991,
+    "rating": 971,
     "wins": 1,
-    "losses": 1,
+    "losses": 2,
     "year": "Junior"
   },
   {
