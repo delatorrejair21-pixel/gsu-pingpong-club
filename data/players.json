@@ -177,10 +177,20 @@
     "id": "fiham",
     "name": "Fiham",
     "photo": "/players/fiham.jpg",
-    "country": "IN",
-    "rating": 978,
-    "wins": 0,
+    "country": "PK",
+    "rating": 999,
+    "wins": 1,
     "losses": 1,
     "year": "Freshman"
+  },
+  {
+    "id": "karan",
+    "name": "Karan",
+    "photo": "/players/karan.jpg",
+    "country": "IN",
+    "rating": 979,
+    "wins": 0,
+    "losses": 1,
+    "year": "Grad"
   }
 ]
