@@ -15,9 +15,9 @@
     "photo": "/players/clarke-ellis.png",
     "avatarPosition": "center 15%",
     "country": "JM",
-    "rating": 1000,
-    "wins": 2,
-    "losses": 2,
+    "rating": 983,
+    "wins": 3,
+    "losses": 5,
     "year": "Senior"
   },
   {
@@ -25,9 +25,9 @@
     "name": "Abdul Rehman",
     "photo": "/players/abdul-rehman.png",
     "country": "PK",
-    "rating": 1019,
-    "wins": 2,
-    "losses": 1,
+    "rating": 1031,
+    "wins": 4,
+    "losses": 2,
     "year": "Junior"
   },
   {
@@ -36,9 +36,9 @@
     "photo": "/players/suchet-konda.png",
     "avatarPosition": "center 5%",
     "country": "IN",
-    "rating": 1060,
+    "rating": 1017,
     "wins": 4,
-    "losses": 0,
+    "losses": 2,
     "year": "Senior"
   },
   {
@@ -57,8 +57,8 @@
     "photo": "/players/johnathan.jpg",
     "country": "US",
     "rating": 982,
-    "wins": 1,
-    "losses": 3,
+    "wins": 2,
+    "losses": 4,
     "year": "Junior"
   },
   {
@@ -76,9 +76,9 @@
     "name": "Jair De La Torre",
     "photo": "/players/jair-de-la-torre.png",
     "country": "MX",
-    "rating": 1039,
+    "rating": 993,
     "wins": 4,
-    "losses": 2,
+    "losses": 5,
     "year": "Junior"
   },
   {
@@ -86,8 +86,8 @@
     "name": "Geethan",
     "photo": "/players/geethan.jpg",
     "country": "IN",
-    "rating": 968,
-    "wins": 1,
+    "rating": 998,
+    "wins": 3,
     "losses": 3,
     "year": "Junior"
   },
@@ -97,9 +97,9 @@
     "photo": "/players/edward.png",
     "avatarPosition": "center 10%",
     "country": "NG",
-    "rating": 955,
+    "rating": 936,
     "wins": 1,
-    "losses": 3,
+    "losses": 4,
     "year": "Junior"
   },
   {
@@ -127,9 +127,9 @@
     "name": "Krish Keshwani",
     "photo": "/players/krish.png",
     "country": "IN",
-    "rating": 1020,
-    "wins": 1,
-    "losses": 0,
+    "rating": 1106,
+    "wins": 7,
+    "losses": 1,
     "year": "Senior"
   },
   {
@@ -160,6 +160,27 @@
     "rating": 1000,
     "wins": 0,
     "losses": 0,
+    "year": "Freshman",
+    "unranked": true
+  },
+  {
+    "id": "anthony",
+    "name": "Anthony",
+    "photo": "/players/anthony.jpg",
+    "country": "US",
+    "rating": 1019,
+    "wins": 1,
+    "losses": 0,
+    "year": "Grad"
+  },
+  {
+    "id": "fiham",
+    "name": "Fiham",
+    "photo": "/players/fiham.jpg",
+    "country": "IN",
+    "rating": 978,
+    "wins": 0,
+    "losses": 1,
     "year": "Freshman",
     "unranked": true
   }
