@@ -86,9 +86,9 @@
     "name": "Geethan",
     "photo": "/players/geethan.jpg",
     "country": "IN",
-    "rating": 998,
+    "rating": 988,
     "wins": 3,
-    "losses": 3,
+    "losses": 4,
     "year": "Junior"
   },
   {
@@ -178,8 +178,8 @@
     "name": "Fiham",
     "photo": "/players/fiham.jpg",
     "country": "PK",
-    "rating": 999,
-    "wins": 1,
+    "rating": 1009,
+    "wins": 2,
     "losses": 1,
     "year": "Freshman"
   },
