@@ -76,9 +76,9 @@
     "name": "Jair De La Torre",
     "photo": "/players/jair-de-la-torre.png",
     "country": "MX",
-    "rating": 993,
+    "rating": 984,
     "wins": 4,
-    "losses": 5,
+    "losses": 6,
     "year": "Junior"
   },
   {
@@ -178,8 +178,8 @@
     "name": "Fiham",
     "photo": "/players/fiham.jpg",
     "country": "PK",
-    "rating": 1009,
-    "wins": 2,
+    "rating": 1018,
+    "wins": 3,
     "losses": 1,
     "year": "Freshman"
   },

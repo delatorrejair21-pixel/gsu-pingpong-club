@@ -361,6 +361,7 @@
     "playerAId": "fiham",
     "playerBId": "jair-de-la-torre",
     "scores": [],
+    "finalScore": { "a": 2, "b": 1 },
     "event": "Round 1"
   },
   {
