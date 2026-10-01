@@ -84,7 +84,7 @@
   {
     "id": "geethan",
     "name": "Geethan",
-    "photo": "/players/geethan.jpg",
+    "photo": "/players/geethan.png",
     "country": "IN",
     "rating": 1005,
     "wins": 4,
@@ -176,7 +176,7 @@
   {
     "id": "fiham",
     "name": "Fiham",
-    "photo": "/players/fiham.jpg",
+    "photo": "/players/fiham.png",
     "country": "PK",
     "rating": 1022,
     "wins": 4,
