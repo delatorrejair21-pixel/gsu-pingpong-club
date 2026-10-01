@@ -15,8 +15,8 @@
     "photo": "/players/clarke-ellis.png",
     "avatarPosition": "center 15%",
     "country": "JM",
-    "rating": 983,
-    "wins": 3,
+    "rating": 993,
+    "wins": 4,
     "losses": 5,
     "year": "Senior"
   },
@@ -76,9 +76,9 @@
     "name": "Jair De La Torre",
     "photo": "/players/jair-de-la-torre.png",
     "country": "MX",
-    "rating": 984,
+    "rating": 974,
     "wins": 4,
-    "losses": 6,
+    "losses": 7,
     "year": "Junior"
   },
   {
@@ -86,8 +86,8 @@
     "name": "Geethan",
     "photo": "/players/geethan.jpg",
     "country": "IN",
-    "rating": 988,
-    "wins": 3,
+    "rating": 1005,
+    "wins": 4,
     "losses": 4,
     "year": "Junior"
   },
@@ -97,9 +97,9 @@
     "photo": "/players/edward.png",
     "avatarPosition": "center 10%",
     "country": "NG",
-    "rating": 936,
+    "rating": 915,
     "wins": 1,
-    "losses": 4,
+    "losses": 6,
     "year": "Junior"
   },
   {
@@ -178,8 +178,8 @@
     "name": "Fiham",
     "photo": "/players/fiham.jpg",
     "country": "PK",
-    "rating": 1018,
-    "wins": 3,
+    "rating": 1022,
+    "wins": 4,
     "losses": 1,
     "year": "Freshman"
   },

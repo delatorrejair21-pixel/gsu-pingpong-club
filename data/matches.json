@@ -406,10 +406,11 @@
   },
   {
     "id": "m64",
-    "date": "2026-09-29",
+    "date": "2026-09-30",
     "playerAId": "fiham",
     "playerBId": "edward",
     "scores": [],
+    "finalScore": { "a": 2, "b": 1 },
     "event": "Round 2"
   },
   {
@@ -430,10 +431,19 @@
   },
   {
     "id": "m67",
-    "date": "2026-09-29",
+    "date": "2026-09-30",
     "playerAId": "jair-de-la-torre",
     "playerBId": "clarke-ellis",
     "scores": [],
+    "finalScore": { "a": 1, "b": 2 },
     "event": "Round 3"
+  },
+  {
+    "id": "m068",
+    "date": "2026-09-30",
+    "playerAId": "geethan",
+    "playerBId": "edward",
+    "scores": [],
+    "finalScore": { "a": 2, "b": 0 }
   }
 ]
