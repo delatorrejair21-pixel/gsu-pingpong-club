@@ -15,8 +15,8 @@
     "photo": "/players/clarke-ellis.png",
     "avatarPosition": "center 15%",
     "country": "JM",
-    "rating": 993,
-    "wins": 4,
+    "rating": 1014,
+    "wins": 5,
     "losses": 5,
     "year": "Senior"
   },
@@ -76,8 +76,8 @@
     "name": "Jair De La Torre",
     "photo": "/players/jair-de-la-torre.png",
     "country": "MX",
-    "rating": 974,
-    "wins": 4,
+    "rating": 997,
+    "wins": 5,
     "losses": 7,
     "year": "Junior"
   },
@@ -86,9 +86,9 @@
     "name": "Geethan",
     "photo": "/players/geethan.png",
     "country": "IN",
-    "rating": 1005,
+    "rating": 984,
     "wins": 4,
-    "losses": 4,
+    "losses": 5,
     "year": "Junior"
   },
   {
@@ -127,9 +127,9 @@
     "name": "Krish Keshwani",
     "photo": "/players/krish.png",
     "country": "IN",
-    "rating": 1106,
+    "rating": 1091,
     "wins": 7,
-    "losses": 1,
+    "losses": 2,
     "year": "Senior"
   },
   {
@@ -168,9 +168,9 @@
     "name": "Anthony",
     "photo": "/players/anthony.jpg",
     "country": "US",
-    "rating": 1019,
-    "wins": 1,
-    "losses": 0,
+    "rating": 1011,
+    "wins": 2,
+    "losses": 1,
     "year": "Grad"
   },
   {
