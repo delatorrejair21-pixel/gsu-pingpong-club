@@ -192,5 +192,24 @@
     "wins": 0,
     "losses": 1,
     "year": "Grad"
+  },
+  {
+    "id": "david",
+    "name": "David",
+    "photo": "/players/david.jpg",
+    "rating": 1000,
+    "wins": 0,
+    "losses": 0,
+    "year": "Freshman"
+  },
+  {
+    "id": "zachari-taylor",
+    "name": "Zachari Taylor",
+    "photo": "/players/zachari-taylor.jpg",
+    "country": "BS",
+    "rating": 1000,
+    "wins": 0,
+    "losses": 0,
+    "year": "Junior"
   }
 ]
