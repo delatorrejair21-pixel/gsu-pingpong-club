@@ -15,8 +15,8 @@
     "photo": "/players/clarke-ellis.png",
     "avatarPosition": "center 15%",
     "country": "JM",
-    "rating": 1014,
-    "wins": 5,
+    "rating": 1035,
+    "wins": 6,
     "losses": 5,
     "year": "Senior"
   },
@@ -25,9 +25,9 @@
     "name": "Abdul Rehman",
     "photo": "/players/abdul-rehman.png",
     "country": "PK",
-    "rating": 1031,
+    "rating": 997,
     "wins": 4,
-    "losses": 2,
+    "losses": 4,
     "year": "Junior"
   },
   {
@@ -76,9 +76,9 @@
     "name": "Jair De La Torre",
     "photo": "/players/jair-de-la-torre.png",
     "country": "MX",
-    "rating": 997,
-    "wins": 5,
-    "losses": 7,
+    "rating": 979,
+    "wins": 6,
+    "losses": 9,
     "year": "Junior"
   },
   {
@@ -86,9 +86,9 @@
     "name": "Geethan",
     "photo": "/players/geethan.png",
     "country": "IN",
-    "rating": 984,
-    "wins": 4,
-    "losses": 5,
+    "rating": 1003,
+    "wins": 7,
+    "losses": 7,
     "year": "Junior"
   },
   {
@@ -107,9 +107,9 @@
     "name": "Vishal",
     "photo": "/players/vishal.png",
     "country": "IN",
-    "rating": 982,
-    "wins": 2,
-    "losses": 2,
+    "rating": 958,
+    "wins": 3,
+    "losses": 5,
     "year": "Junior"
   },
   {
@@ -117,9 +117,9 @@
     "name": "Sidh Jain",
     "photo": "/players/sidh-jain.png",
     "country": "IN",
-    "rating": 962,
+    "rating": 907,
     "wins": 1,
-    "losses": 4,
+    "losses": 7,
     "year": "Sophomore"
   },
   {
@@ -127,8 +127,8 @@
     "name": "Krish Keshwani",
     "photo": "/players/krish.png",
     "country": "IN",
-    "rating": 1091,
-    "wins": 7,
+    "rating": 1145,
+    "wins": 11,
     "losses": 2,
     "year": "Senior"
   },
@@ -197,8 +197,8 @@
     "id": "david",
     "name": "David",
     "photo": "/players/david.jpg",
-    "rating": 1000,
-    "wins": 0,
+    "rating": 1020,
+    "wins": 1,
     "losses": 0,
     "year": "Freshman"
   },
@@ -207,8 +207,8 @@
     "name": "Zachari Taylor",
     "photo": "/players/zachari-taylor.jpg",
     "country": "BS",
-    "rating": 1000,
-    "wins": 0,
+    "rating": 1017,
+    "wins": 1,
     "losses": 0,
     "year": "Junior"
   }

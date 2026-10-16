@@ -375,19 +375,12 @@
     "event": "Round 1"
   },
   {
-    "id": "m60",
-    "date": "2026-10-05",
-    "playerAId": "vishal",
-    "playerBId": "edward",
-    "scores": [],
-    "event": "Round 1"
-  },
-  {
     "id": "m61",
     "date": "2026-10-05",
     "playerAId": "krish",
     "playerBId": "geethan",
     "scores": [],
+    "finalScore": { "a": 2, "b": 0 },
     "event": "Round 2"
   },
   {
@@ -397,14 +390,6 @@
     "playerBId": "jair-de-la-torre",
     "scores": [],
     "finalScore": { "a": 0, "b": 2 },
-    "event": "Round 2"
-  },
-  {
-    "id": "m63",
-    "date": "2026-10-05",
-    "playerAId": "clarke-ellis",
-    "playerBId": "vishal",
-    "scores": [],
     "event": "Round 2"
   },
   {
@@ -422,14 +407,7 @@
     "playerAId": "krish",
     "playerBId": "vishal",
     "scores": [],
-    "event": "Round 3"
-  },
-  {
-    "id": "m66",
-    "date": "2026-10-05",
-    "playerAId": "anthony",
-    "playerBId": "edward",
-    "scores": [],
+    "finalScore": { "a": 2, "b": 0 },
     "event": "Round 3"
   },
   {
@@ -455,6 +433,7 @@
     "playerAId": "sidh-jain",
     "playerBId": "geethan",
     "scores": [],
+    "finalScore": { "a": 0, "b": 2 },
     "event": "Round 1"
   },
   {
@@ -463,39 +442,8 @@
     "playerAId": "jair-de-la-torre",
     "playerBId": "vishal",
     "scores": [],
+    "finalScore": { "a": 2, "b": 0 },
     "event": "Round 1"
-  },
-  {
-    "id": "m071",
-    "date": "2026-10-05",
-    "playerAId": "clarke-ellis",
-    "playerBId": "krish",
-    "scores": [],
-    "event": "Round 1"
-  },
-  {
-    "id": "m072",
-    "date": "2026-10-05",
-    "playerAId": "anthony",
-    "playerBId": "abdul-rehman",
-    "scores": [],
-    "event": "Round 1"
-  },
-  {
-    "id": "m073",
-    "date": "2026-10-05",
-    "playerAId": "david",
-    "playerBId": "zachari-taylor",
-    "scores": [],
-    "event": "Round 1"
-  },
-  {
-    "id": "m074",
-    "date": "2026-10-05",
-    "playerAId": "sidh-jain",
-    "playerBId": "david",
-    "scores": [],
-    "event": "Round 2"
   },
   {
     "id": "m075",
@@ -503,6 +451,7 @@
     "playerAId": "jair-de-la-torre",
     "playerBId": "geethan",
     "scores": [],
+    "finalScore": { "a": 0, "b": 2 },
     "event": "Round 2"
   },
   {
@@ -511,22 +460,7 @@
     "playerAId": "clarke-ellis",
     "playerBId": "abdul-rehman",
     "scores": [],
-    "event": "Round 2"
-  },
-  {
-    "id": "m077",
-    "date": "2026-10-05",
-    "playerAId": "krish",
-    "playerBId": "anthony",
-    "scores": [],
-    "event": "Round 2"
-  },
-  {
-    "id": "m078",
-    "date": "2026-10-05",
-    "playerAId": "zachari-taylor",
-    "playerBId": "vishal",
-    "scores": [],
+    "finalScore": { "a": 2, "b": 0 },
     "event": "Round 2"
   },
   {
@@ -535,6 +469,7 @@
     "playerAId": "sidh-jain",
     "playerBId": "zachari-taylor",
     "scores": [],
+    "finalScore": { "a": 0, "b": 2 },
     "event": "Round 3"
   },
   {
@@ -543,14 +478,7 @@
     "playerAId": "jair-de-la-torre",
     "playerBId": "david",
     "scores": [],
-    "event": "Round 3"
-  },
-  {
-    "id": "m081",
-    "date": "2026-10-05",
-    "playerAId": "clarke-ellis",
-    "playerBId": "anthony",
-    "scores": [],
+    "finalScore": { "a": 0, "b": 2 },
     "event": "Round 3"
   },
   {
@@ -559,6 +487,7 @@
     "playerAId": "krish",
     "playerBId": "abdul-rehman",
     "scores": [],
+    "finalScore": { "a": 2, "b": 0 },
     "event": "Round 3"
   },
   {
@@ -567,6 +496,23 @@
     "playerAId": "geethan",
     "playerBId": "vishal",
     "scores": [],
+    "finalScore": { "a": 2, "b": 1 },
     "event": "Round 3"
+  },
+  {
+    "id": "m084",
+    "date": "2026-10-05",
+    "playerAId": "vishal",
+    "playerBId": "sidh-jain",
+    "scores": [],
+    "finalScore": { "a": 2, "b": 0 }
+  },
+  {
+    "id": "m085",
+    "date": "2026-10-05",
+    "playerAId": "krish",
+    "playerBId": "geethan",
+    "scores": [],
+    "finalScore": { "a": 2, "b": 0 }
   }
 ]
