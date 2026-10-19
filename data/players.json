@@ -107,8 +107,8 @@
     "name": "Vishal",
     "photo": "/players/vishal.png",
     "country": "IN",
-    "rating": 958,
-    "wins": 3,
+    "rating": 982,
+    "wins": 4,
     "losses": 5,
     "year": "Junior"
   },
@@ -197,9 +197,9 @@
     "id": "david",
     "name": "David",
     "photo": "/players/david.jpg",
-    "rating": 1020,
+    "rating": 1000,
     "wins": 1,
-    "losses": 0,
+    "losses": 1,
     "year": "Freshman"
   },
   {
@@ -207,9 +207,9 @@
     "name": "Zachari Taylor",
     "photo": "/players/zachari-taylor.jpg",
     "country": "BS",
-    "rating": 1017,
-    "wins": 1,
-    "losses": 0,
+    "rating": 1013,
+    "wins": 2,
+    "losses": 1,
     "year": "Junior"
   }
 ]
