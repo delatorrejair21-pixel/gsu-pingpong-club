@@ -25,9 +25,9 @@
     "name": "Abdul Rehman",
     "photo": "/players/abdul-rehman.png",
     "country": "PK",
-    "rating": 997,
-    "wins": 4,
-    "losses": 4,
+    "rating": 1000,
+    "wins": 5,
+    "losses": 5,
     "year": "Junior"
   },
   {
@@ -76,9 +76,9 @@
     "name": "Jair De La Torre",
     "photo": "/players/jair-de-la-torre.png",
     "country": "MX",
-    "rating": 979,
-    "wins": 6,
-    "losses": 9,
+    "rating": 986,
+    "wins": 8,
+    "losses": 10,
     "year": "Junior"
   },
   {
@@ -86,9 +86,9 @@
     "name": "Geethan",
     "photo": "/players/geethan.png",
     "country": "IN",
-    "rating": 1003,
-    "wins": 7,
-    "losses": 7,
+    "rating": 1023,
+    "wins": 9,
+    "losses": 8,
     "year": "Junior"
   },
   {
@@ -117,9 +117,9 @@
     "name": "Sidh Jain",
     "photo": "/players/sidh-jain.png",
     "country": "IN",
-    "rating": 907,
+    "rating": 877,
     "wins": 1,
-    "losses": 7,
+    "losses": 9,
     "year": "Sophomore"
   },
   {

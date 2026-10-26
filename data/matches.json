@@ -533,7 +533,7 @@
   },
   {
     "id": "m088",
-    "date": "2026-10-19",
+    "date": "2026-10-26",
     "playerAId": "krish",
     "playerBId": "fiham",
     "scores": [],
@@ -541,7 +541,7 @@
   },
   {
     "id": "m089",
-    "date": "2026-10-19",
+    "date": "2026-10-26",
     "playerAId": "clarke-ellis",
     "playerBId": "anthony",
     "scores": [],
@@ -553,6 +553,7 @@
     "playerAId": "geethan",
     "playerBId": "abdul-rehman",
     "scores": [],
+    "finalScore": { "a": 1, "b": 2 },
     "event": "Round 1"
   },
   {
@@ -561,11 +562,12 @@
     "playerAId": "jair-de-la-torre",
     "playerBId": "sidh-jain",
     "scores": [],
+    "finalScore": { "a": 2, "b": 0 },
     "event": "Round 1"
   },
   {
     "id": "m092",
-    "date": "2026-10-19",
+    "date": "2026-10-26",
     "playerAId": "krish",
     "playerBId": "clarke-ellis",
     "scores": [],
@@ -573,7 +575,7 @@
   },
   {
     "id": "m093",
-    "date": "2026-10-19",
+    "date": "2026-10-26",
     "playerAId": "fiham",
     "playerBId": "anthony",
     "scores": [],
@@ -585,11 +587,12 @@
     "playerAId": "geethan",
     "playerBId": "jair-de-la-torre",
     "scores": [],
+    "finalScore": { "a": 2, "b": 0 },
     "event": "Round 2"
   },
   {
     "id": "m095",
-    "date": "2026-10-19",
+    "date": "2026-10-26",
     "playerAId": "abdul-rehman",
     "playerBId": "sidh-jain",
     "scores": [],
@@ -597,7 +600,7 @@
   },
   {
     "id": "m096",
-    "date": "2026-10-19",
+    "date": "2026-10-26",
     "playerAId": "krish",
     "playerBId": "anthony",
     "scores": [],
@@ -605,7 +608,7 @@
   },
   {
     "id": "m097",
-    "date": "2026-10-19",
+    "date": "2026-10-26",
     "playerAId": "clarke-ellis",
     "playerBId": "fiham",
     "scores": [],
@@ -617,6 +620,7 @@
     "playerAId": "geethan",
     "playerBId": "sidh-jain",
     "scores": [],
+    "finalScore": { "a": 2, "b": 0 },
     "event": "Round 3"
   },
   {
@@ -625,6 +629,7 @@
     "playerAId": "abdul-rehman",
     "playerBId": "jair-de-la-torre",
     "scores": [],
+    "finalScore": { "a": 1, "b": 2 },
     "event": "Round 3"
   }
 ]
