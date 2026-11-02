@@ -40,7 +40,8 @@
     "rating": 1017,
     "wins": 4,
     "losses": 2,
-    "year": "Senior"
+    "year": "Senior",
+    "unranked": true
   },
   {
     "id": "ethan-nguyen",
@@ -50,7 +51,8 @@
     "rating": 1018,
     "wins": 2,
     "losses": 1,
-    "year": "Junior"
+    "year": "Junior",
+    "unranked": true
   },
   {
     "id": "johnathan",
@@ -70,7 +72,8 @@
     "rating": 980,
     "wins": 1,
     "losses": 2,
-    "year": "Sophomore"
+    "year": "Sophomore",
+    "unranked": true
   },
   {
     "id": "jair-de-la-torre",
@@ -141,7 +144,8 @@
     "rating": 966,
     "wins": 0,
     "losses": 2,
-    "year": "Freshman"
+    "year": "Freshman",
+    "unranked": true
   },
   {
     "id": "naveen",
@@ -192,7 +196,8 @@
     "rating": 979,
     "wins": 0,
     "losses": 1,
-    "year": "Grad"
+    "year": "Grad",
+    "unranked": true
   },
   {
     "id": "david",
