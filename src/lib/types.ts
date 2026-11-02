@@ -18,7 +18,7 @@ export interface Player {
   note?: string;
   avatarPosition?: string;
   country?: string;
-  /** Excluded from the ranked leaderboard and listed separately as "Unranked". */
+  /** Excluded from the ranked leaderboard and listed separately as "Inactive/Unranked". */
   unranked?: boolean;
 }
 

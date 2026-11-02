@@ -78,7 +78,7 @@ export function LeaderboardClient({ players }: LeaderboardClientProps) {
           {unrankedPlayers.length > 0 && (
             <div>
               <div className="border-y border-ink-700 bg-ink-900/40 px-4 py-2 text-xs font-bold uppercase tracking-wider text-white/40 sm:px-6">
-                Unranked
+                Inactive/Unranked
               </div>
               <table className="w-full border-collapse text-left">
                 <tbody>
